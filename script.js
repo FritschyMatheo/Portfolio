@@ -1,45 +1,42 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const themeToggle = document.getElementById('theme-toggle');
-    const body = document.body;
+// Modal pour agrandissement d'images
+document.addEventListener('DOMContentLoaded', function () {
+    // Créer le modal
+    const modal = document.createElement('div');
+    modal.className = 'image-modal';
+    modal.innerHTML = `
+        <span class="close-modal">&times;</span>
+        <img src="" alt="Image agrandie">
+    `;
+    document.body.appendChild(modal);
 
-    // Select elements inside the button
-    const iconSpan = themeToggle.querySelector('.icon');
-    const textSpan = themeToggle.querySelector('.text');
+    const modalImg = modal.querySelector('img');
+    const closeBtn = modal.querySelector('.close-modal');
 
-    // Function to update UI based on theme
-    function updateUI(isLight) {
-        if (isLight) {
-            iconSpan.textContent = '☀️';
-            textSpan.textContent = 'Clair';
-        } else {
-            iconSpan.textContent = '🌙';
-            textSpan.textContent = 'Sombre';
-        }
+    // Ajouter le click sur toutes les images de projet
+    document.querySelectorAll('.project-images img').forEach(img => {
+        img.addEventListener('click', function () {
+            modal.classList.add('active');
+            modalImg.src = this.src;
+            modalImg.alt = this.alt;
+        });
+    });
+
+    // Fermer le modal
+    function closeModal() {
+        modal.classList.remove('active');
     }
 
-    // Check local storage - Default is Dark (no class)
-    // If 'light', add class
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'light') {
-        body.classList.add('light-mode');
-        updateUI(true);
-    } else {
-        updateUI(false);
-    }
-
-    themeToggle.addEventListener('click', () => {
-        // Toggle light-mode class
-        body.classList.toggle('light-mode');
-        const isLight = body.classList.contains('light-mode');
-
-        // Save preference
-        if (isLight) {
-            localStorage.setItem('theme', 'light');
-        } else {
-            localStorage.setItem('theme', 'dark');
+    closeBtn.addEventListener('click', closeModal);
+    modal.addEventListener('click', function (e) {
+        if (e.target === modal) {
+            closeModal();
         }
+    });
 
-        // Update Text & Icon
-        updateUI(isLight);
+    // Fermer avec Echap
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && modal.classList.contains('active')) {
+            closeModal();
+        }
     });
 });

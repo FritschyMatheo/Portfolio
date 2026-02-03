@@ -156,6 +156,74 @@ section {
     background: radial-gradient(circle at 90% 10%, rgba(37, 99, 235, 0.05), transparent 40%);
 }
 
+.hero .container {
+    width: 100%;
+}
+
+.hero h1 {
+    display: block;
+    width: 100%;
+}
+
+.hero p {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Table of Contents Section */
+.table-of-contents {
+    background-color: var(--card-bg);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.toc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.toc-card {
+    padding: 1.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+
+.toc-card h3 {
+    color: var(--accent-blue);
+    margin-bottom: 1rem;
+}
+
+.toc-card ul {
+    list-style: none;
+}
+
+.toc-card ul li {
+    margin-bottom: 0.5rem;
+}
+
+.toc-card ul li a {
+    text-decoration: none;
+    color: var(--text-secondary);
+    transition: color 0.2s ease;
+}
+
+.toc-card ul li a:hover {
+    color: var(--accent-blue);
+}
+
+.toc-card ul li:first-child a {
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.toc-card hr {
+    margin: 0.5rem 0;
+    border: 0;
+    border-top: 1px solid var(--border-color);
+}
+
 /* About Section */
 .about {
     background-color: transparent;
@@ -420,4 +488,110 @@ footer {
 .glitch-text::before,
 .glitch-text::after {
     display: none;
+}
+
+/* Image Modal System */
+.project-images img {
+    cursor: pointer;
+    max-height: 300px;
+    width: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    transition: all 0.3s ease;
+}
+
+.project-images.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.project-images.grid-3 img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+}
+
+.project-images img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(37, 99, 235, 0.2);
+}
+
+/* Modal pour agrandissement d'image */
+.image-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    cursor: pointer;
+}
+
+.image-modal.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-modal img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    animation: zoomIn 0.3s ease;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.image-modal .close-modal {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.image-modal .close-modal:hover {
+    color: var(--accent-cyan);
+}
+
+/* PDF Viewer */
+.pdf-viewer {
+    width: 100%;
+    height: 600px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+.pdf-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(135deg, var(--accent-blue), var(--accent-cyan));
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+.pdf-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
 }

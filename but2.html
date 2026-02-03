@@ -22,7 +22,7 @@
     <main>
         <section class="hero" style="min-height: 40vh;">
             <div class="container">
-                <h1 data-text="Compétences BUT 2" class="glitch-text">Compétences BUT 2</h1>
+                <h1>Compétences BUT 2</h1>
                 <p>Deuxième année : Administration, Sécurité et Développement</p>
             </div>
         </section>
@@ -35,80 +35,64 @@
                 <div class="competency-grid">
 
                     <!-- SAE 3.03: Réseau Multisites -->
-                    <article class="competency-card">
+                    <article class="competency-card full-width">
                         <header>
-                            <h2>SAE 3.03 - Conception Réseau Multisites</h2>
-                            <h3>Architecture LAN/WAN & Haute Disponibilité</h3>
+                            <h2>SAE 3.03 - Concevoir un réseau multisites</h2>
+                            <h3>Réseau LAN/WAN avec redondance et services avancés</h3>
                         </header>
                         <div class="card-content">
                             <h4>Contexte</h4>
-                            <p>Conception et maquettage d'un réseau d'entreprise multisites relié à un WAN opérateur
-                                simulé.</p>
-                            <h4>Réalisation</h4>
+                            <p>Le but de cette SAE était de réaliser un réseau virtuel complet avec une partie LAN et
+                                ses services, reliable à une partie WAN simulant les opérateurs et la connexion à un
+                                autre site. Le projet était à faire par groupe de 3 étudiants qui devaient se répartir
+                                chacun une partie des tâches, une personne le LAN, une personne et les services et une
+                                le réseau externe (partie opérateur).</p>
+
+                            <h4>Ce que j'ai fait</h4>
+                            <p>J'étais la personne chargée de la partie LAN du réseau, le réseau local de l'entreprise.
+                                J'ai premièrement du concevoir la maquette du réseau en réfléchissant à sa structure et
+                                aux différents appareils présents afin de garantir : la disponibilité, l'évolutivité, la
+                                hiérarchisation ainsi que la segmentation du réseau. Il fallait donc aussi réfléchir à
+                                la structure et l'adressage du réseau, celui ci partait de l'adresse imaginaire de
+                                l'entreprise qui était : 10.242.x.0. J'ai donc crée différents Vlans afin de sécuriser
+                                et segmenter les différentes zones et les secteurs de l'entreprise. Afin de respecter
+                                toute les consignes précédentes, il fallait donc configurer des switchs et des routeurs
+                                Cisco en utilisant différents protocoles réseau, notamment : le Spanning Tree, DHCP,
+                                OSPF et le VRRP.</p>
+
+                            <h4>Rapport technique</h4>
+                            <iframe src="fichiers/260427-FRITSCHY-Mathéo_Rapport-LAN.pdf" class="pdf-viewer"
+                                title="Rapport LAN SAE 3.03"></iframe>
+                            <a href="fichiers/260427-FRITSCHY-Mathéo_Rapport-LAN.pdf" download class="pdf-link">📄
+                                Télécharger le rapport</a>
+
+                            <h4>Compétences validées</h4>
                             <ul>
-                                <li>Conception de l'architecture LAN (Hiérarchisation, Redondance).</li>
-                                <li>Plan d'adressage complexe et segmentation VLAN (10.242.x.0).</li>
-                                <li>Protocoles avancés Cisco : OSPF (Routage dynamique), VRRP (Redondance passerelle),
-                                    Spanning Tree (Boucles), QoS.</li>
+                                <li>En mettant en place le routage du réseau avec les protocoles Spanning Tree ainsi que
+                                    le VRRP <strong>AC21.01</strong> | Configurer et dépanner le routage dynamique dans
+                                    un réseau et <strong>AC21.04</strong> | Déployer des services réseaux avancés</li>
+                                <li>En configurant les autres protocoles de sécurisation ainsi que d'adressage IP pour
+                                    mettre en place les postes virtuels : <strong>AC21.03</strong> | Déployer des postes
+                                    clients et des solutions virtualisées adaptées à une situation donnée ainsi que
+                                    <strong>AC21.04</strong> | Déployer des services réseaux avancés
+                                </li>
+                                <li>Après avoir réalisé le réseau LAN et documenté la solution dans le rapport, je
+                                    valide m'<strong>AC21.02</strong> | Configurer et expliquer une politique simple de
+                                    QoS et les fonctions de base de la sécurité d'un réseau</li>
+                                <li>Ayant travaillé avec les deux autres personnes qui ont configuré les services et
+                                    l'extérieur du réseau, nous avons validé ensemble les AC : <strong>AC21.05</strong>
+                                    | Identifier les réseaux opérateurs et l'architecture d'Internet et
+                                    <strong>AC21.06</strong> | Travailler en équipe pour développer ses compétences
+                                    professionnelles
+                                </li>
                             </ul>
                         </div>
                         <div class="card-footer">
+                            <span class="tag">Cisco</span>
+                            <span class="tag">VLANs</span>
                             <span class="tag">OSPF</span>
                             <span class="tag">VRRP</span>
-                            <span class="tag">Cisco</span>
-                            <span class="tag">Architecture</span>
-                        </div>
-                    </article>
-
-                    <!-- SAE 3.04: Pentesting -->
-                    <article class="competency-card">
-                        <header>
-                            <h2>SAE 3.Cyber.04 - Découverte du Pentesting</h2>
-                            <h3>Audit de vulnérabilités et CTF</h3>
-                        </header>
-                        <div class="card-content">
-                            <h4>Contexte</h4>
-                            <p>Initiation aux techniques d'audit de sécurité et de tests d'intrusion via des plateformes
-                                de Challenge (CTF).</p>
-                            <h4>Réalisation</h4>
-                            <ul>
-                                <li>Challenges RootMe : Web Client/Server, Cryptanalyse, Réseau, Stéganographie.</li>
-                                <li>Utilisation d'outils d'audit : NMAP, Burp Suite, John the Ripper, Wireshark.</li>
-                                <li>Compréhension des 10 vulnérabilités OWASP.</li>
-                            </ul>
-                            <div class="project-images">
-                                <img src="images/sae304-rootme.png" alt="Score RootMe" class="img-fluid border-neon">
-                            </div>
-                        </div>
-                        <div class="card-footer">
-                            <span class="tag">Pentesting</span>
-                            <span class="tag">CTF</span>
-                            <span class="tag">Kali Linux</span>
-                            <span class="tag">OWASP</span>
-                        </div>
-                    </article>
-
-                    <!-- SAE 4.01: Sécurisation SI -->
-                    <article class="competency-card">
-                        <header>
-                            <h2>SAE 4.01 - Sécuriser un S.I.</h2>
-                            <h3>Firewalling, VPN et Durcissement</h3>
-                        </header>
-                        <div class="card-content">
-                            <h4>Contexte</h4>
-                            <p>Sécurisation complète d'une infrastructure d'entreprise virtualisée (binôme).</p>
-                            <h4>Réalisation</h4>
-                            <ul>
-                                <li>Déploiement et configuration firewall <strong>pFSense</strong>.</li>
-                                <li>Mise en place d'un tunnel <strong>VPN</strong> pour accès distant sécurisé.</li>
-                                <li>Configuration de services sécurisés : LDAP (LDAPS), DNS, DHCP.</li>
-                                <li>Définition de règles de filtrage strictes et analyse de logs.</li>
-                            </ul>
-                        </div>
-                        <div class="card-footer">
-                            <span class="tag">pFSense</span>
-                            <span class="tag">VPN IPsec/OpenVPN</span>
-                            <span class="tag">Sécurité Système</span>
+                            <span class="tag">Spanning Tree</span>
                         </div>
                     </article>
 
@@ -162,12 +146,212 @@
                                 <li>Implémentation de protocoles applicatifs simples.</li>
                                 <li>Développement en C et Python.</li>
                             </ul>
-                            <div class="card-footer">
-                                <span class="tag">C / Python</span>
-                                <span class="tag">Sockets</span>
-                                <a href="https://github.com/FritschyMatheo/R3.09-SAE3.02" target="_blank"
-                                    class="btn-link">GitHub</a>
+
+                            <h4>Document de réponse</h4>
+                            <iframe src="fichiers/260301-Document de réponse SAE302.pdf" class="pdf-viewer"
+                                title="Document SAE 3.02"></iframe>
+                            <a href="fichiers/260301-Document de réponse SAE302.pdf" download class="pdf-link">📄
+                                Télécharger le document</a>
+                        </div>
+                        <div class="card-footer">
+                            <span class="tag">C / Python</span>
+                            <span class="tag">Sockets</span>
+                            <a href="https://github.com/FritschyMatheo/R3.09-SAE3.02" target="_blank"
+                                class="btn-link">GitHub</a>
+                        </div>
+                    </article>
+
+                    <!-- SAE 3.01 -->
+                    <article class="competency-card">
+                        <header>
+                            <h2>SAE 3.01 - Mettre en œuvre un système de transmission</h2>
+                            <h3>Prise Connectée IoT avec Arduino et Raspberry Pi</h3>
+                        </header>
+                        <div class="card-content">
+                            <h4>Contexte</h4>
+                            <p>Conception d'une prise connectée contrôlable à distance via application mobile et web.
+                                Projet en groupe de 4-5 étudiants intégrant carte Arduino, Raspberry Pi et protocole
+                                MQTT.</p>
+                            <h4>Réalisation</h4>
+                            <ul>
+                                <li>Installation et configuration du système sur Raspberry Pi.</li>
+                                <li>Programmation Arduino pour gestion du courant (ON/OFF) via messages MQTT.</li>
+                                <li>Développement application web (Alexis Stock) pour contrôle à distance.</li>
+                                <li>Développement application mobile (Rayan Sadek) avec même fonctionnalités.</li>
+                                <li>Communication bidirectionnelle : applications → Arduino et Arduino → applications.
+                                </li>
+                                <li>Gestion multi-lampes avec sélection individuelle.</li>
+                            </ul>
+
+                            <h4>Rapport de projet</h4>
+                            <iframe src="fichiers/260328-SAE-3.01_RT21_BOBENRIETER_FRITSCHY_ SADEK_STOCK_VISCA.pdf"
+                                class="pdf-viewer" title="Rapport SAE 3.01"></iframe>
+                            <a href="fichiers/260328-SAE-3.01_RT21_BOBENRIETER_FRITSCHY_ SADEK_STOCK_VISCA.pdf" download
+                                class="pdf-link">📄 Télécharger le rapport</a>
+                        </div>
+                        <div class="card-footer">
+                            <span class="tag">Arduino</span>
+                            <span class="tag">Raspberry Pi</span>
+                            <span class="tag">MQTT</span>
+                            <span class="tag">IoT</span>
+                            <a href="https://github.com/ViscaFlorian/SAE-301" target="_blank"
+                                class="btn-link">GitHub</a>
+                        </div>
+                    </article>
+
+                </div>
+
+                <!-- Compétence 4 : Cybersécurité - Administrer un SI sécurisé -->
+                <h2 id="competence-4" class="competency-separator">Compétence 4 : Administrer un système d'information
+                    sécurisé</h2>
+                <div class="competency-grid">
+
+                    <!-- SAE 3.04 -->
+                    <article class="competency-card">
+                        <header>
+                            <h2>SAE 3.Cyber.04 - Découverte du Pentesting</h2>
+                            <h3>Audit de vulnérabilités et CTF</h3>
+                        </header>
+                        <div class="card-content">
+                            <h4>Contexte</h4>
+                            <p>Initiation aux techniques d'audit de sécurité et de tests d'intrusion via des plateformes
+                                de Challenge (CTF). Projet individuel sur la plateforme RootMe.</p>
+                            <h4>Réalisation</h4>
+                            <ul>
+                                <li>Challenges RootMe : Web Client/Server, Cryptanalyse, Réseau, Stéganographie.</li>
+                                <li>Utilisation d'outils d'audit : NMAP, Burp Suite, John the Ripper, Wireshark,
+                                    Hashcat.</li>
+                                <li>Compréhension des 10 vulnérabilités OWASP.</li>
+                                <li>Découverte des failles de sécurité et méthodes de remédiation.</li>
+                            </ul>
+                            <div class="project-images">
+                                <img src="images/sae304-rootme.png" alt="Score RootMe" class="img-fluid border-neon">
                             </div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="tag">Pentesting</span>
+                            <span class="tag">CTF</span>
+                            <span class="tag">Kali Linux</span>
+                            <span class="tag">OWASP</span>
+                        </div>
+                    </article>
+
+                    <!-- SAE 4.01 -->
+                    <article class="competency-card">
+                        <header>
+                            <h2>SAE 4.01 - Sécuriser un S.I.</h2>
+                            <h3>Firewall, VPN et Durcissement</h3>
+                        </header>
+                        <div class="card-content">
+                            <h4>Contexte</h4>
+                            <p>Sécurisation complète d'une infrastructure d'entreprise virtualisée (binôme). Mise en
+                                place de pare-feu, VPN, annuaire LDAP sécurisé et services réseau.</p>
+                            <h4>Réalisation</h4>
+                            <ul>
+                                <li>Déploiement et configuration firewall <strong>pFSense</strong>.</li>
+                                <li>Mise en place d'un tunnel <strong>VPN</strong> pour accès distant sécurisé.</li>
+                                <li>Configuration de services sécurisés : LDAP (LDAPS), DNS, DHCP.</li>
+                                <li>Définition de règles de filtrage strictes et analyse de logs.</li>
+                                <li>Choix d'outils cryptographiques adaptés (certificats SSL/TLS).</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="tag">pFSense</span>
+                            <span class="tag">VPN IPsec/OpenVPN</span>
+                            <span class="tag">LDAPS</span>
+                            <span class="tag">Sécurité Système</span>
+                        </div>
+                    </article>
+
+                    <!-- Tâches entreprise cybersécurité -->
+                    <article class="competency-card">
+                        <header>
+                            <h2>Tâches en Entreprise - Cybersécurité</h2>
+                            <h3>Gestion de la sécurité du SI</h3>
+                        </header>
+                        <div class="card-content">
+                            <h4>Missions</h4>
+                            <p>Assistant RSSI en charge de la sécurité du système d'information de l'entreprise.</p>
+                            <ul>
+                                <li><strong>Antivirus :</strong> Gestion et administration de Bitdefender Gravity Zone.
+                                </li>
+                                <li><strong>RMM :</strong> Surveillance et contrôle à distance via Ninja One.</li>
+                                <li><strong>Veille :</strong> Suivi des newsletters et alertes de sécurité,
+                                    participation à des conférences.</li>
+                                <li><strong>Documentation :</strong> Lecture de documents techniques en anglais.</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="tag">Bitdefender</span>
+                            <span class="tag">Ninja One</span>
+                            <span class="tag">RSSI</span>
+                        </div>
+                    </article>
+
+                </div>
+
+                <!-- Compétence 5 : Cybersécurité - Surveiller un SI sécurisé -->
+                <h2 id="competence-5" class="competency-separator">Compétence 5 : Surveiller un système d'information
+                    sécurisé</h2>
+                <div class="competency-grid">
+
+                    <!-- SAE 3.04 aspect surveillance -->
+                    <article class="competency-card">
+                        <header>
+                            <h2>SAE 3.Cyber.04 - Outils de Surveillance</h2>
+                            <h3>Tests de pénétration et outils de surveillance</h3>
+                        </header>
+                        <div class="card-content">
+                            <h4>Contexte</h4>
+                            <p>Prise en main des outils de test de pénétration réseau/système via la plateforme RootMe.
+                            </p>
+                            <h4>Réalisation</h4>
+                            <ul>
+                                <li>Utilisation de <strong>BurpSuite</strong> pour l'analyse de trafic web.</li>
+                                <li>Scan réseau avec <strong>NMAP</strong> pour identifier les services actifs.</li>
+                                <li>Analyse de paquets avec <strong>Wireshark</strong>.</li>
+                                <li>Cassage de hash avec <strong>Hashcat</strong> et <strong>John the Ripper</strong>.
+                                </li>
+                                <li>Détection de vulnérabilités et failles de sécurité.</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="tag">BurpSuite</span>
+                            <span class="tag">NMAP</span>
+                            <span class="tag">Wireshark</span>
+                            <span class="tag">Hashcat</span>
+                        </div>
+                    </article>
+
+                    <!-- Tâches entreprise surveillance -->
+                    <article class="competency-card full-width">
+                        <header>
+                            <h2>Tâches en Entreprise - Surveillance SI</h2>
+                            <h3>Administration et surveillance du réseau</h3>
+                        </header>
+                        <div class="card-content">
+                            <h4>Missions de surveillance</h4>
+                            <p>Surveillance continue du système d'information de l'entreprise avec différents outils.
+                            </p>
+                            <ul>
+                                <li><strong>Administration Microsoft :</strong> Surveillance de l'état des comptes
+                                    utilisateurs.</li>
+                                <li><strong>Ninja One (RMM) :</strong> Détection de problèmes de mises à jour et
+                                    contrôle à distance.</li>
+                                <li><strong>Bitdefender Gravity Zone :</strong> Détection de virus et malwares en temps
+                                    réel.</li>
+                                <li><strong>PRTG :</strong> Surveillance de l'état du réseau en temps réel.</li>
+                                <li><strong>Gestion bornes Wi-Fi :</strong> Surveillance du trafic, mises à jour et état
+                                    des bornes.</li>
+                                <li><strong>Gestion d'incidents :</strong> Résolution de pannes réseau sur différents
+                                    sites.</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="tag">PRTG</span>
+                            <span class="tag">Bitdefender</span>
+                            <span class="tag">Ninja One</span>
+                            <span class="tag">Administration</span>
                         </div>
                     </article>
 
@@ -180,7 +364,7 @@
                     <article class="competency-card full-width">
                         <h2>Tâches en Entreprise (Alternance)</h2>
                         <div class="card-content">
-                            <h3>Missions Principales</h3>
+                            <h4>Missions Principales</h4>
                             <p>Technicien réseau et support N2 au sein du service informatique (Aléos).</p>
                             <ul>
                                 <li><strong>Gestion de parc :</strong> Préparation et déploiement de postes
@@ -191,11 +375,11 @@
                                 </li>
                                 <li><strong>Support :</strong> Résolution d'incidents tickets N1/N2.</li>
                             </ul>
-                            <div class="card-footer">
-                                <span class="tag">Support UT</span>
-                                <span class="tag">Déploiement</span>
-                                <span class="tag">Maintenance</span>
-                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="tag">Support UT</span>
+                            <span class="tag">Déploiement</span>
+                            <span class="tag">Maintenance</span>
                         </div>
                     </article>
                 </div>
@@ -209,6 +393,7 @@
             <p>&copy; 2026 Mathéo FRITSCHY. Tous droits réservés.</p>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>

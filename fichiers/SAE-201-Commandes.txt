@@ -1,0 +1,104 @@
+#SAE-Commandes :
+
+--- Base ---
+
+no ip domain-lookup
+vlan 100
+name administration
+vlan 200
+name dev
+vlan 300
+name administrateur
+
+Interfaces Pcs :
+interface range gigabitethernet ...
+switchport mode access
+
+ex
+hostname SW1
+ex
+copy run sta
+
+
+--- Trunk ---
+
+SW2(config)#interface gigabitEthernet 0/0
+SW2(config-if)#no switchport
+
+
+SW2(config)#interface gigabitEthernet 3/1
+SW2(config-if)#switchport trunk encapsulation dot1q
+SW2(config-if)#switchport mode trunk 
+SW2(config-if)#no switchport trunk allowed vlan 100,200,300
+
+
+Pour voir :
+sh int trunk
+copy run sta
+
+---- Adresses VLAN : ----
+
+SW2:
+int vlan 100 
+ip address 192.168.138.1 255.255.255.224
+no sh
+int vlan 200 
+ip address 192.168.138.33 255.255.255.224
+no sh
+int vlan 300 
+ip address 192.168.138.65 255.255.255.224
+no sh
+
+Spanning tree VLAN :
+
+---- interface g3/1 ----
+spanning-tree vlan 100 port-priority 64
+spanning-tree vlan 200 port-priority 128
+spanning-tree vlan 300 port-priority 192
+
+
+---- interface g3/2 ----
+spanning-tree vlan 100 port-priority 192
+spanning-tree vlan 200 port-priority 64
+spanning-tree vlan 300 port-priority 128
+
+---- interface g3/3 ----
+spanning-tree vlan 100 port-priority 128
+spanning-tree vlan 200 port-priority 192
+spanning-tree vlan 300 port-priority 64
+
+
+DHCP SW2
+
+ip routing
+ip dhcp excluded-address 192.168.138.65
+ip dhcp excluded-address 192.168.138.33
+ip dhcp excluded-address 192.168.138.30
+ip dhcp excluded-address 192.168.138.62
+ip dhcp excluded-address 192.168.138.64
+
+ip dhcp pool administration
+
+network 192.168.138.0 255.255.255.224
+default-router 192.168.138.30
+
+ip dhcp pool dev
+
+network 192.168.138.32 255.255.255.224
+default-router 192.168.138.62
+
+ip dhcp pool administrateur
+
+network 192.168.138.64 255.255.255.224
+default-router 192.168.138.94
+
+
+
+
+---- RIP -----
+router rip
+version 2
+no auto-summary
+network 192.168.138.0
+network 192.168.138.32
+network 192.168.138.64
