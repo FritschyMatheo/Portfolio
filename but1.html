@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUT 1 - Portfolio Mathéo FRITSCHY</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="but1.html" class="active">BUT 1</a></li>
+                <li><a href="but2.html">BUT 2</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" style="min-height: 40vh;">
+            <div class="container">
+                <h1 data-text="Compétences BUT 1" class="glitch-text">Compétences BUT 1</h1>
+                <p>Première année : Fondamentaux et intégration en service informatique</p>
+            </div>
+        </section>
+
+        <section id="competences">
+            <div class="container">
+
+                <!-- Compétence 1 : Administrer -->
+                <h2 id="competence-1" class="competency-separator" data-text="Compétence 1 : Administrer">Compétence 1 :
+                    Administrer les
+                    réseaux</h2>
+                <div class="competency-grid">
+
+                    <!-- SAE 1.01: Hygiène informatique -->
+                    <article class="competency-card">
+                        <header>
+                            <h2>SAE 1.01 - Sensibilisation à la Cybersécurité</h2>
+                            <h3>Hygiène informatique et protection des données</h3>
+                        </header>
+                        <div class="card-content">
+                            <h4>Contexte</h4>
+                            <p>Projet de recherche et de communication sur les enjeux de la cybersécurité, de la
+                                cyberdéfense et de la cyber-surveillance.</p>
+                            <h4>Réalisation</h4>
+                            <ul>
+                                <li startLine="50">Recherche documentaire sur les acteurs et menaces numériques.</li>
+                                <li>Réalisation d'une vidéo de sensibilisation (montage Hitfilm).</li>
+                                <li>Présentation orale sur les bonnes pratiques d'hygiène informatique.</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="tag">Sensibilisation</span>
+                            <span class="tag">Montage Vidéo</span>
+                        </div>
+                    </article>
+
+                    <!-- SAE 1.02: Initiation Réseaux -->
+                    <article class="competency-card">
+                        <header>
+                            <h2>SAE 1.02 - Initiation aux Réseaux</h2>
+                            <h3>Simulation et architecture réseau basique</h3>
+                        </header>
+                        <div class="card-content">
+                            <h4>Contexte</h4>
+                            <p>Conception et simulation du réseau informatique d'une agence sur EVE-NG.</p>
+                            <h4>Réalisation</h4>
+                            <ul>
+                                <li>Définition des VLANs et plan d'adressage IP.</li>
+                                <li>Choix et configuration des équipements (Routeurs, Switchs).</li>
+                                <li>Mise en place d'un serveur Linux pour les services de base.</li>
+                            </ul>
+                            <div class="project-images">
+                                <img src="images/sae102-eveng.png" alt="Topologie EVE-NG SAE 1.02"
+                                    class="img-fluid border-neon">
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="tag">EVE-NG</span>
+                            <span class="tag">Cisco IOS</span>
+                            <span class="tag">Linux</span>
+                        </div>
+                    </article>
+
+                    <!-- SAE 2.01: Réseau petite structure -->
+                    <article class="competency-card">
+                        <header>
+                            <h2>SAE 2.01 - Réseau Petite Structure</h2>
+                            <h3>Architecture VLAN et Services</h3>
+                        </header>
+                        <div class="card-content">
+                            <h4>Contexte</h4>
+                            <p>Construction d'un réseau simulé sous GNS3 pour une PME avec segmentation stricte.</p>
+                            <h4>Réalisation</h4>
+                            <ul>
+                                <li>Segmentation par VLANs (Admin, Dev, Direction).</li>
+                                <li>Configuration des ACLs et règles de sécurité.</li>
+                                <li>Implémentation des services Web et FTP.</li>
+                            </ul>
+                            <div class="project-images">
+                                <img src="images/sae201-gns3.png" alt="Simulation GNS3 SAE 2.01"
+                                    class="img-fluid border-neon">
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="tag">GNS3</span>
+                            <span class="tag">ACLs</span>
+                            <span class="tag">Services Réseau</span>
+                        </div>
+                    </article>
+
+                    <!-- SAE 2.04: Projet Intégratif -->
+                    <article class="competency-card full-width">
+                        <header>
+                            <h2>SAE 2.04 - Projet Intégratif (S2)</h2>
+                            <h3>Infrastructure Complète : Réseau, Système, Web & IoT</h3>
+                        </header>
+                        <div class="card-content">
+                            <h4>Contexte</h4>
+                            <p>Projet majeur de fin de première année visant à mobiliser l'ensemble des compétences :
+                                déploiement d'un réseau physique, téléphonie sur IP, et développement d'une solution IoT
+                                complète.</p>
+                            <h4>Réalisation</h4>
+                            <ul>
+                                <li><strong>Réseau :</strong> Configuration équipements Cisco, VLANs (Voix, user,
+                                    serveur), ACLs, Routage.</li>
+                                <li><strong>Système :</strong> Services DNS, DHCP, FTP sous Windows Server 2019 et
+                                    Debian.</li>
+                                <li><strong>IoT & Dev :</strong> Script Python (MQTT) pour la collecte de données
+                                    capteurs.</li>
+                                <li><strong>Web :</strong> Développement d'une application Django pour visualiser les
+                                    données.</li>
+                                <li><strong>ToIP :</strong> Mise en place de téléphonie IP avec Linphone.</li>
+                            </ul>
+                            <div class="project-images grid-3">
+                                <img src="images/sae204-reseau.png" alt="Plan Réseau SAE 2.04"
+                                    class="img-fluid border-neon">
+                                <img src="images/sae204-bdd.png" alt="Schéma BDD" class="img-fluid border-neon">
+                                <img src="images/sae204-web.png" alt="Interface Web Django"
+                                    class="img-fluid border-neon">
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="tag">Cisco</span>
+                            <span class="tag">Python/Django</span>
+                            <span class="tag">MQTT</span>
+                            <span class="tag">Windows Server</span>
+                            <span class="tag">ToIP</span>
+                            <a href="https://github.com/JM-UHA/SAE2.04" target="_blank" class="btn-link">Voir sur
+                                GitHub</a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Compétence 2 : Connecter -->
+                <h2 id="competence-2" class="competency-separator" data-text="Compétence 2 : Connecter">Compétence 2 :
+                    Connecter les
+                    entreprises et les usagers</h2>
+                <div class="competency-grid">
+                    <!-- SAE 1.03: Transmissions -->
+                    <article class="competency-card">
+                        <header>
+                            <h2>SAE 1.03 - Transmissions et Wifi</h2>
+                            <h3>Câblage et Réseaux Sans Fil</h3>
+                        </header>
+                        <div class="card-content">
+                            <h4>Contexte</h4>
+                            <p>Découverte de la couche physique et mise en place d'une infrastructure Wi-Fi
+                                professionnelle.</p>
+                            <h4>Réalisation</h4>
+                            <ul>
+                                <li>Réalisation de câblage RJ45 (Cat 7).</li>
+                                <li>Configuration d'un contrôleur Wifi Cisco (WLC 5500) et bornes LAP.</li>
+                                <li>Mesures de signal et simulation Packet Tracer.</li>
+                            </ul>
+                            <div class="project-images grid-2">
+                                <img src="images/sae103-mesures.png" alt="Mesures Wifi" class="img-fluid border-neon">
+                                <img src="images/sae103-cisco.png" alt="Simulation Packet Tracer"
+                                    class="img-fluid border-neon">
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="tag">Cisco WLC</span>
+                            <span class="tag">Wi-Fi</span>
+                            <span class="tag">Câblage</span>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Compétence 3 : Créer -->
+                <h2 id="competence-3" class="competency-separator" data-text="Compétence 3 : Créer">Compétence 3 : Créer
+                    des outils et
+                    applications</h2>
+                <div class="competency-grid">
+
+                    <!-- SAE 1.04 - Se présenter sur internet -->
+                    <article class="competency-card">
+                        <h2>SAE 1.04 : Se présenter sur internet</h2>
+                        <div class="card-content">
+                            <h3>Contexte</h3>
+                            <p>Sensibilisation à l'identité numérique et création d'une présence professionnelle en
+                                ligne. Projet individuel.</p>
+                            <h3>Ce que j'ai fait</h3>
+                            <ul>
+                                <li>Analyse de l'e-réputation existante et nettoyage.</li>
+                                <li>Création de pages web décrivant mon parcours et mes centres d'intérêt.</li>
+                                <li>Utilisation de HTML/CSS et hébergement sur GitHub Pages.</li>
+                            </ul>
+                            <div class="card-footer">
+                                <span class="tag">HTML/CSS</span>
+                                <span class="tag">e-Réputation</span>
+                                <a href="https://fritschymatheo.github.io/SAE14_Se-presenter-sur-internet/"
+                                    target="_blank" class="btn-link">Voir le site</a>
+                                <a href="https://github.com/FritschyMatheo/SAE14_Se-presenter-sur-internet"
+                                    target="_blank" class="btn-link">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- SAE 1.05 - Traiter des données -->
+                    <article class="competency-card">
+                        <h2>SAE 1.05 : Traiter des données</h2>
+                        <div class="card-content">
+                            <h3>Contexte</h3>
+                            <p>Création d'un programme d'attaque et d'écoute réseau "Man in the Middle" (ARP Poisoning)
+                                en Python avec Scapy.</p>
+                            <h3>Ce que j'ai fait</h3>
+                            <ul>
+                                <li>Développement de deux scripts Python avec la librairie Scapy.</li>
+                                <li>Observation du trafic et injection de paquets.</li>
+                                <li>Compréhension des mécanismes ARP et IP.</li>
+                            </ul>
+                            <div class="card-footer">
+                                <span class="tag">Python</span>
+                                <span class="tag">Scapy</span>
+                                <span class="tag">Réseau</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- SAE 2.03 - Solution informatique -->
+                    <article class="competency-card">
+                        <h2>SAE 2.03 : Solution Informatique pour l'Entreprise</h2>
+                        <div class="card-content">
+                            <h3>Contexte</h3>
+                            <p>Conception et déploiement d'une application web de gestion d'absences avec base de
+                                données.</p>
+                            <h3>Ce que j'ai fait</h3>
+                            <ul>
+                                <li>Développement backend avec <strong>Python Django</strong>.</li>
+                                <li>Base de données <strong>MySQL</strong> hébergée sur VM Windows.</li>
+                                <li>Serveur web <strong>Apache2</strong> sur Linux.</li>
+                                <li>Gestion de projet (Gantt) et versionning (Git).</li>
+                            </ul>
+                            <div class="card-footer">
+                                <span class="tag">Django</span>
+                                <span class="tag">MySQL</span>
+                                <span class="tag">Apache2</span>
+                                <a href="https://github.com/FritschyMatheo/Site-Gestion-Absences" target="_blank"
+                                    class="btn-link">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Mathéo FRITSCHY. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

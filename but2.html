@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUT 2 - Portfolio Mathéo FRITSCHY</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="but1.html">BUT 1</a></li>
+                <li><a href="but2.html" class="active">BUT 2</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" style="min-height: 40vh;">
+            <div class="container">
+                <h1 data-text="Compétences BUT 2" class="glitch-text">Compétences BUT 2</h1>
+                <p>Deuxième année : Administration, Sécurité et Développement</p>
+            </div>
+        </section>
+
+        <section id="competences">
+            <div class="container">
+
+                <!-- Compétence 1 : Administrer -->
+                <h2 id="competence-1" class="competency-separator">Compétence 1 : Administrer les réseaux</h2>
+                <div class="competency-grid">
+
+                    <!-- SAE 3.03: Réseau Multisites -->
+                    <article class="competency-card">
+                        <header>
+                            <h2>SAE 3.03 - Conception Réseau Multisites</h2>
+                            <h3>Architecture LAN/WAN & Haute Disponibilité</h3>
+                        </header>
+                        <div class="card-content">
+                            <h4>Contexte</h4>
+                            <p>Conception et maquettage d'un réseau d'entreprise multisites relié à un WAN opérateur
+                                simulé.</p>
+                            <h4>Réalisation</h4>
+                            <ul>
+                                <li>Conception de l'architecture LAN (Hiérarchisation, Redondance).</li>
+                                <li>Plan d'adressage complexe et segmentation VLAN (10.242.x.0).</li>
+                                <li>Protocoles avancés Cisco : OSPF (Routage dynamique), VRRP (Redondance passerelle),
+                                    Spanning Tree (Boucles), QoS.</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="tag">OSPF</span>
+                            <span class="tag">VRRP</span>
+                            <span class="tag">Cisco</span>
+                            <span class="tag">Architecture</span>
+                        </div>
+                    </article>
+
+                    <!-- SAE 3.04: Pentesting -->
+                    <article class="competency-card">
+                        <header>
+                            <h2>SAE 3.Cyber.04 - Découverte du Pentesting</h2>
+                            <h3>Audit de vulnérabilités et CTF</h3>
+                        </header>
+                        <div class="card-content">
+                            <h4>Contexte</h4>
+                            <p>Initiation aux techniques d'audit de sécurité et de tests d'intrusion via des plateformes
+                                de Challenge (CTF).</p>
+                            <h4>Réalisation</h4>
+                            <ul>
+                                <li>Challenges RootMe : Web Client/Server, Cryptanalyse, Réseau, Stéganographie.</li>
+                                <li>Utilisation d'outils d'audit : NMAP, Burp Suite, John the Ripper, Wireshark.</li>
+                                <li>Compréhension des 10 vulnérabilités OWASP.</li>
+                            </ul>
+                            <div class="project-images">
+                                <img src="images/sae304-rootme.png" alt="Score RootMe" class="img-fluid border-neon">
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="tag">Pentesting</span>
+                            <span class="tag">CTF</span>
+                            <span class="tag">Kali Linux</span>
+                            <span class="tag">OWASP</span>
+                        </div>
+                    </article>
+
+                    <!-- SAE 4.01: Sécurisation SI -->
+                    <article class="competency-card">
+                        <header>
+                            <h2>SAE 4.01 - Sécuriser un S.I.</h2>
+                            <h3>Firewalling, VPN et Durcissement</h3>
+                        </header>
+                        <div class="card-content">
+                            <h4>Contexte</h4>
+                            <p>Sécurisation complète d'une infrastructure d'entreprise virtualisée (binôme).</p>
+                            <h4>Réalisation</h4>
+                            <ul>
+                                <li>Déploiement et configuration firewall <strong>pFSense</strong>.</li>
+                                <li>Mise en place d'un tunnel <strong>VPN</strong> pour accès distant sécurisé.</li>
+                                <li>Configuration de services sécurisés : LDAP (LDAPS), DNS, DHCP.</li>
+                                <li>Définition de règles de filtrage strictes et analyse de logs.</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="tag">pFSense</span>
+                            <span class="tag">VPN IPsec/OpenVPN</span>
+                            <span class="tag">Sécurité Système</span>
+                        </div>
+                    </article>
+
+                </div>
+
+                <!-- Compétence 2 : Connecter -->
+                <h2 id="competence-2" class="competency-separator">Compétence 2 : Connecter les entreprises et les
+                    usagers</h2>
+                <div class="competency-grid">
+
+                    <!-- SAE 3.01 -->
+                    <article class="competency-card">
+                        <header>
+                            <h2>SAE 3.01 - Système de Transmission</h2>
+                            <h3>Fibres Optiques et FH</h3>
+                        </header>
+                        <div class="card-content">
+                            <h4>Contexte</h4>
+                            <p>Étude et mise en œuvre de supports de transmission physiques modernes.</p>
+                            <h4>Réalisation</h4>
+                            <ul>
+                                <li>Soudure de fibre optique et réflectométrie (OTDR).</li>
+                                <li>Alignement et configuration de faisceaux hertziens.</li>
+                                <li>Analyse de bilan de liaison.</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="tag">Fibre Optique</span>
+                            <span class="tag">Transmission HF</span>
+                        </div>
+                    </article>
+
+                </div>
+
+                <!-- Compétence 3 : Créer -->
+                <h2 id="competence-3" class="competency-separator">Compétence 3 : Créer des outils et applications</h2>
+                <div class="competency-grid">
+
+                    <!-- SAE 3.02 -->
+                    <article class="competency-card">
+                        <header>
+                            <h2>SAE 3.02 - Développement d'Applications Communicantes</h2>
+                            <h3>Programmation Sockets et Protocoles</h3>
+                        </header>
+                        <div class="card-content">
+                            <h4>Contexte</h4>
+                            <p>Développement d'outils réseaux communiquant en architecture Client/Serveur.</p>
+                            <h4>Réalisation</h4>
+                            <ul>
+                                <li>Création d'un serveur et client tchat (Sockets UDP/TCP).</li>
+                                <li>Implémentation de protocoles applicatifs simples.</li>
+                                <li>Développement en C et Python.</li>
+                            </ul>
+                            <div class="card-footer">
+                                <span class="tag">C / Python</span>
+                                <span class="tag">Sockets</span>
+                                <a href="https://github.com/FritschyMatheo/R3.09-SAE3.02" target="_blank"
+                                    class="btn-link">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+                <!-- Transverse -->
+                <h2 class="competency-separator">Expérience Professionnelle</h2>
+                <div class="competency-grid">
+                    <!-- Tâches en Entreprise -->
+                    <article class="competency-card full-width">
+                        <h2>Tâches en Entreprise (Alternance)</h2>
+                        <div class="card-content">
+                            <h3>Missions Principales</h3>
+                            <p>Technicien réseau et support N2 au sein du service informatique (Aléos).</p>
+                            <ul>
+                                <li><strong>Gestion de parc :</strong> Préparation et déploiement de postes
+                                    utilisateurs, gestion MDM.</li>
+                                <li><strong>Réseau & Wi-Fi :</strong> Installation de bornes Wi-Fi, audit de couverture
+                                    (Wifi Analyzer), brassage.</li>
+                                <li><strong>VPN :</strong> Configuration des accès distants pour les collaborateurs.
+                                </li>
+                                <li><strong>Support :</strong> Résolution d'incidents tickets N1/N2.</li>
+                            </ul>
+                            <div class="card-footer">
+                                <span class="tag">Support UT</span>
+                                <span class="tag">Déploiement</span>
+                                <span class="tag">Maintenance</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Mathéo FRITSCHY. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
