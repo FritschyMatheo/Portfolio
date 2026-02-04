@@ -192,6 +192,25 @@
     background: rgba(245, 158, 11, 0.15);
 }
 
+.competence-icon.alternance {
+    background: linear-gradient(135deg, var(--cyber-primary) 0%, #2d4a6f 100%);
+}
+
+/* Alternance highlight */
+.alternance-highlight .competence-header {
+    background: linear-gradient(135deg, var(--cyber-primary) 0%, #2d4a6f 100%);
+    color: white;
+}
+
+.alternance-highlight .competence-title h3,
+.alternance-highlight .competence-title p {
+    color: white;
+}
+
+.alternance-highlight .competence-title p {
+    opacity: 0.9;
+}
+
 .competence-title {
     flex: 1;
 }
