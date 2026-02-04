@@ -4,97 +4,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio FRITSCHY Mathéo</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Portfolio de Mathéo Fritschy - Étudiant BUT R&T Cybersécurité">
+    <title>Mathéo Fritschy | Portfolio BUT R&T Cybersécurité</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
+    <!-- ========================================
+       HEADER & NAVIGATION
+       ======================================== -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav-logo">
+                MF // Portfolio
+            </a>
+
+            <ul class="nav-links">
                 <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="matrice.html">Matrice</a></li>
                 <li><a href="but1.html">BUT 1</a></li>
                 <li><a href="but2.html">BUT 2</a></li>
+                <li><a href="but3.html">BUT 3</a></li>
             </ul>
+
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     </header>
 
-    <main>
-        <section class="hero">
-            <div class="container">
-                <h1>Bienvenue sur la page d'accueil de mon portfolio professionnel</h1>
-                <p>Vous trouverez sur celle-ci mon diplôme du baccalauréat, les relevés de note de ma formation actuelle
-                    qui est un BUT Réseaux et Télécommunication à l'IUT de Colmar ainsi que mon CV en français et en
-                    anglais.</p>
-                <p>En haut à droite, vous pouvez changer de page pour accéder aux différentes compétences de ma
-                    formation afin de voir comment j'ai pu les valider en cours d'année.</p>
-            </div>
-        </section>
-
-        <section class="table-of-contents">
-            <div class="container">
-                <h2>Sommaire</h2>
-                <div class="toc-grid">
-
-                    <!-- BUT 1 -->
-                    <article class="toc-card">
-                        <h3>BUT 1 : Fondamentaux</h3>
-                        <ul>
-                            <li><a href="but1.html">→ Voir la page complète</a></li>
-                            <hr>
-                            <li><a href="but1.html#competence-1">Compétence 1 : Administrer</a></li>
-                            <li><a href="but1.html#competence-2">Compétence 2 : Connecter</a></li>
-                            <li><a href="but1.html#competence-3">Compétence 3 : Créer</a></li>
-                        </ul>
-                    </article>
-
-                    <!-- BUT 2 -->
-                    <article class="toc-card">
-                        <h3>BUT 2 : Avancé</h3>
-                        <ul>
-                            <li><a href="but2.html">→ Voir la page complète</a></li>
-                            <hr>
-                            <li><a href="but2.html#competence-1">Compétence 1 : Administrer</a></li>
-                            <li><a href="but2.html#competence-2">Compétence 2 : Connecter</a></li>
-                            <li><a href="but2.html#competence-3">Compétence 3 : Créer</a></li>
-                            <li><a href="but2.html#competence-4">Compétence 4 : Cybersécurité - Administrer</a></li>
-                            <li><a href="but2.html#competence-5">Compétence 5 : Cybersécurité - Surveiller</a></li>
-                        </ul>
-                    </article>
-
-                </div>
-            </div>
-        </section>
-
-        <section class="about">
-            <div class="container">
-                <h2>Qui suis-je ?</h2>
-                <p>Je m'appelle Mathéo FRITSCHY, actuellement en troisième année de BUT R&T, je suis issu d'un
-                    baccalauréat professionnel Systèmes Numériques option Réseaux. J'aime beaucoup l'informatique et les
-                    nouvelles technologies et à côté, j'adore apprendre de nouvelles choses, le piano ou l'italien par
-                    exemple. Je pratique également de l'escalade en bloc et de la callisthénie qui est une forme de
-                    renforcement au poids du corps.</p>
-            </div>
-        </section>
-
-        <section class="downloads">
-            <div class="container">
-                <h2>Mes Documents</h2>
-                <div class="button-group">
-                    <a href="#" class="btn" download>Télécharger CV (FR)</a>
-                    <a href="#" class="btn" download>Télécharger CV (EN)</a>
-                    <a href="#" class="btn" download>Télécharger Baccalauréat</a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
+    <!-- ========================================
+       HERO SECTION
+       ======================================== -->
+    <section class="hero">
         <div class="container">
-            <p>&copy; 2026 Mathéo FRITSCHY. Tous droits réservés.</p>
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <!-- CONTENU À FOURNIR -->
+                    Bonjour, je suis <span>Mathéo Fritschy</span>
+                </h1>
+                <p class="hero-subtitle">
+                    <!-- CONTENU À FOURNIR : Phrase de présentation -->
+                    Étudiant en BUT R&T parcours Cybersécurité
+                </p>
+
+                <div class="hero-tags">
+                    <span class="tag tag-securiser">🛡️ Cybersécurité</span>
+                    <span class="tag tag-administrer">🖧 Réseaux</span>
+                    <span class="tag tag-programmer">💻 Développement</span>
+                </div>
+
+                <div class="flex gap-md">
+                    <a href="#presentation" class="btn btn-primary">
+                        Découvrir mon parcours
+                    </a>
+                    <a href="#cv" class="btn btn-outline">
+                        Télécharger CV
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+       PRÉSENTATION
+       ======================================== -->
+    <section id="presentation" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>À propos de moi</h2>
+                <p>Mon parcours et mes motivations</p>
+            </div>
+
+            <div class="presentation-content">
+                <!-- CONTENU À FOURNIR PAR L'UTILISATEUR -->
+                <p><em>[En attente du texte de présentation...]</em></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+       STRUCTURE DU SITE
+       ======================================== -->
+    <section id="navigation-guide" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Comment naviguer ?</h2>
+                <p>Découvrez la structure de ce portfolio</p>
+            </div>
+
+            <div class="ac-list">
+                <a href="matrice.html" class="ac-item">
+                    <span class="ac-code">📊</span>
+                    <span class="ac-description"><strong>Matrice des compétences</strong> — Vue globale des
+                        apprentissages critiques</span>
+                </a>
+                <a href="but1.html" class="ac-item">
+                    <span class="ac-code">1️⃣</span>
+                    <span class="ac-description"><strong>BUT 1</strong> — Projets et SAÉs de première année</span>
+                </a>
+                <a href="but2.html" class="ac-item">
+                    <span class="ac-code">2️⃣</span>
+                    <span class="ac-description"><strong>BUT 2</strong> — Projets et SAÉs de deuxième année</span>
+                </a>
+                <a href="but3.html" class="ac-item">
+                    <span class="ac-code">3️⃣</span>
+                    <span class="ac-description"><strong>BUT 3</strong> — Projets, alternance et SAÉs de troisième
+                        année</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+       CV TÉLÉCHARGEABLE
+       ======================================== -->
+    <section id="cv" class="section">
+        <div class="container">
+            <div class="cv-section">
+                <div>
+                    <h2>Mon CV</h2>
+                    <p>Téléchargez mon curriculum vitae au format PDF</p>
+                    <a href="fichiers/cv.pdf" class="btn btn-primary" download>
+                        📄 Télécharger le CV
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+       TRANSITION WAVE (Cyber → Nature)
+       ======================================== -->
+    <svg class="transition-wave" viewBox="0 0 1440 120" preserveAspectRatio="none">
+        <path d="M0,64 C360,120 720,0 1080,64 C1260,96 1380,80 1440,64 L1440,120 L0,120 Z"></path>
+    </svg>
+
+    <!-- ========================================
+       HOBBIES SECTION (Thème Nature)
+       ======================================== -->
+    <section id="hobbies" class="nature-section section">
+        <div class="container">
+            <div class="section-header">
+                <h2>En dehors de l'informatique...</h2>
+                <p>Mes passions et activités personnelles</p>
+            </div>
+
+            <div class="hobbies-grid">
+                <div class="hobby-card">
+                    <div class="hobby-icon">🏋️</div>
+                    <h3>Callisthénie</h3>
+                    <p><!-- CONTENU À FOURNIR --></p>
+                </div>
+
+                <div class="hobby-card">
+                    <div class="hobby-icon">🥾</div>
+                    <h3>Randonnée</h3>
+                    <p><!-- CONTENU À FOURNIR --></p>
+                </div>
+
+                <div class="hobby-card">
+                    <div class="hobby-icon">🎹</div>
+                    <h3>Piano</h3>
+                    <p><!-- CONTENU À FOURNIR --></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+       FOOTER
+       ======================================== -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 Mathéo Fritschy — Portfolio BUT R&T Cybersécurité</p>
+            <p class="mt-sm">
+                <a href="https://github.com/votre-github" target="_blank">GitHub</a> •
+                <a href="https://linkedin.com/in/votre-linkedin" target="_blank">LinkedIn</a>
+            </p>
         </div>
     </footer>
-    <script src="script.js"></script>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>

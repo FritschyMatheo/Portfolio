@@ -4,467 +4,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BUT 1 - Portfolio Mathéo FRITSCHY</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Projets BUT 1 - Portfolio Mathéo Fritschy">
+    <title>BUT 1 | Mathéo Fritschy</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
+    <!-- HEADER -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav-logo">MF // Portfolio</a>
+            <ul class="nav-links">
                 <li><a href="index.html">Accueil</a></li>
+                <li><a href="matrice.html">Matrice</a></li>
                 <li><a href="but1.html" class="active">BUT 1</a></li>
                 <li><a href="but2.html">BUT 2</a></li>
+                <li><a href="but3.html">BUT 3</a></li>
             </ul>
+            <div class="nav-toggle"><span></span><span></span><span></span></div>
         </nav>
     </header>
 
-    <main>
-        <section class="hero" style="min-height: 40vh;">
+    <!-- MAIN -->
+    <main style="padding-top: 90px;">
+        <section class="section">
             <div class="container">
-                <h1>Compétences BUT 1</h1>
-                <p>Première année : Fondamentaux et intégration en service informatique</p>
-            </div>
-        </section>
-
-        <section id="competences">
-            <div class="container">
-
-                <!-- Compétence 1 : Administrer -->
-                <h2 id="competence-1" class="competency-separator">Compétence 1 : Administrer les réseaux</h2>
-                <div class="competency-grid">
-
-                    <!-- SAE 1.01: Hygiène informatique -->
-                    <article class="competency-card full-width">
-                        <header>
-                            <h2>SAE 1.01 - Sensibilisation à l'hygiène informatique et à la cybersécurité</h2>
-                            <h3>Recherche et communication sur la cybersécurité</h3>
-                        </header>
-                        <div class="card-content">
-                            <h4>Contexte</h4>
-                            <p>Le principal but de cette SAE de début d'année était de nous faire chercher des
-                                informations sur différents sujets liés à la formation tel que la Cybersécurité et
-                                Cyberguerre dans notre cas. D'autres groupes avaient par exemple les malwares ou bien la
-                                sécurité des mots de passe.</p>
-                            <p>Après ça, nous devions réaliser une présentation orale puis une vidéo sur notre sujet.
-                            </p>
-                            <p>Nous étions en groupe de deux.</p>
-
-                            <h4>Ce que nous avons fait</h4>
-                            <p><strong>Les présentations</strong></p>
-                            <p>Nous devions bien sûr faire beaucoup de recherches pour être précis et apprendre des
-                                choses aux personnes qui regarderont la vidéo et nous écouteront à l'oral.</p>
-                            <p>Chaque groupe a présenté aux autres son travail ce qui nous a tous permis d'en apprendre
-                                plus sur chaque sujet.</p>
-                            <p>Lors de la présentation orale, nous avons eu un premier retour sur les choses à améliorer
-                                pour la suite afin de faire une vidéo plus qualitative.</p>
-                            <p>J'ai utilisé le logiciel Hitfilm pour effectuer le montage et nous mettions nos
-                                informations sur un document partagé Google Doc.</p>
-                            <p>Cette SAE nous a donc permis d'apprendre beaucoup de choses sur la sécurité numérique et
-                                sur les principaux groupes et acteurs de la cybersécurité et des conflits mondiaux.</p>
-
-                            <h4>Compétences validées</h4>
-                            <ul>
-                                <li>Durant nos recherches, nous nous sommes informé sur la cybersécurité et avons donc
-                                    vu des choses aussi par rapport à l'internet et la communication pour
-                                    l'<strong>AC11.02</strong> | Comprendre l'architecture et les fondements des
-                                    systèmes numériques, les principes du codage de l'information, des communications et
-                                    de l'Internet.</li>
-                                <li>Nous avons donc assisté aux présentations des autres élèves dont certains qui
-                                    parlaient de failles de sécurités ou de types d'attaques ce qui nous aide pour
-                                    l'<strong>AC11.04</strong> | Maîtriser les rôles et les principes fondamentaux des
-                                    systèmes d'exploitation afin d'interagir avec ceux-ci pour la configuration et
-                                    l'administration des réseaux et services fournis.</li>
-                                <li>L'<strong>AC11.05</strong> | Identifier les dysfonctionnements du réseau local et
-                                    savoir les signaler a été légèrement impacté dans certaines présentations mais ce
-                                    n'est pas dans ce projet qu'il est le plus validé.</li>
-                            </ul>
-                        </div>
-                        <div class="card-footer">
-                            <span class="tag">Cybersécurité</span>
-                            <span class="tag">Recherche</span>
-                            <span class="tag">Hitfilm</span>
-                            <a href="https://www.youtube.com/watch?v=UoCdsWYY0Lw" target="_blank" class="btn-link">La
-                                vidéo</a>
-                        </div>
-                    </article><!-- SAE 1.02: Initiation Réseaux -->
-                    <article class="competency-card full-width">
-                        <header>
-                            <h2>SAE 1.02 - S'initier aux réseaux informatiques</h2>
-                            <h3>Simulation réseau avec EVE-NG</h3>
-                        </header>
-                        <div class="card-content">
-                            <h4>Contexte</h4>
-                            <p>Cette SAE était à faire seul, elle consistait à la mise en place d'un petit réseau d'une
-                                succursale pour une entreprise. Il fallait en fait créer un réseau simulé sous le
-                                logiciel EVE-NG. Habituellement, nous utilisions Cisco Packet Tracer pour simuler des
-                                topologies réseau mais nous avons du apprendre à utiliser ce nouveau logiciel. Les
-                                grandes différences entre EVE-NG et Cisco Packet Tracer c'est que Cisco ne propose que
-                                des produits Cisco à simuler alors que sous EVE-NG, on peut retrouver d'autres
-                                fabricants. EVE-NG utilise de vraies images de systèmes d'exploitation ce qui est plus
-                                réaliste mais ça consomme plus de ressources.</p>
-                            <p>Il fallait donc créer des sous réseaux que l'on affectait à des machines pour gérer les
-                                communications et la structure du réseau.</p>
-
-                            <h4>Ce que nous avons fait</h4>
-                            <p><strong>Création et configuration du réseau simulé</strong></p>
-                            <p>Nous avons donc dû prendre en main l'outil EVE-NG lors des premières séances et réaliser
-                                le schéma que vous pouvez voir à droite. Il y avait donc 4 VLANs à créer et configurer
-                                avec différents nombres d'hôtes chacun. Avant cela il fallait donc découper un réseau
-                                qui nous avait été donné. Avant de placer les éléments, nous avons du choisir les bons
-                                switch et routeurs selon leurs caractéristiques techniques. Principalement le nombre de
-                                ports, s'ils étaient PoE et la vitesse.</p>
-                            <p>Le serveur Linux devait aussi être configuré pour communiquer avec le réseau. Pour
-                                optimiser les sous-réseaux, ils n'étaient pas tous en masque réseau /27 mais certains
-                                avaient aussi /28 et /29. Le réseau comprenait également un service DHCP du serveur.</p>
-                            <p>En tant que SAE du premier semestre, mise à part la prise en main de l'outil qui était
-                                assez compliqué au début, elle était très intéressante et pas si compliqué que ça avec
-                                du recul. Il fallait juste bien s'organiser et découper le réseau tranquillement.</p>
-
-                            <div class="project-images">
-                                <img src="images/sae102-eveng.png" alt="Topologie EVE-NG SAE 1.02"
-                                    class="img-fluid border-neon">
-                            </div>
-
-                            <h4>Compétences validées</h4>
-                            <ul>
-                                <li>Nous avons pu aborder l'<strong>AC11.01</strong> | Maîtriser les lois fondamentales
-                                    de l'électricité afin d'intervenir sur des équipements de réseaux et
-                                    télécommunications en analysant les caractéristiques des différents équipements que
-                                    nous avions à utiliser dans la simulation tel que les switch et routeurs.</li>
-                                <li>C'est avec le découpage du réseau et la configuration des différents masques et le
-                                    DHCP que l'on valide l'<strong>AC11.02</strong> | Comprendre l'architecture et les
-                                    fondements des systèmes numériques, les principes du codage de l'information, des
-                                    communications et de l'Internet.</li>
-                                <li>L'<strong>AC11.03</strong> | Configurer les fonctions de base du réseau local a
-                                    bien-sûr été validé en configurant le serveur DHCP, les VLANs et les sous réseaux de
-                                    la simulation.</li>
-                                <li>La configuration du serveur Linux et la mise en place des interfaces réseau et des
-                                    IPs valide l'<strong>AC11.04</strong> | Maîtriser les rôles et les principes
-                                    fondamentaux des systèmes d'exploitation afin d'interagir avec ceux-ci pour la
-                                    configuration et l'administration des réseaux et services fournis. Mais également la
-                                    prise en main d'EVE-NG qui est un outil assez complexe.</li>
-                                <li>Tout au long de la réalisation, en corrigeant nos erreurs après les avoir cherché et
-                                    en faisant des plans et tableaux de nos adresses, c'est l'<strong>AC11.05</strong> |
-                                    Identifier les dysfonctionnements du réseau local et savoir les signaler sur lequel
-                                    nous avons travaillé.</li>
-                                <li>En créant le réseau, en configurant le poste Linux et en faisant la démonstration à
-                                    notre professeur, nous avons pu valider l'<strong>AC11.06</strong> | Installer un
-                                    poste client, expliquer la procédure mise en place.</li>
-                            </ul>
-                        </div>
-                        <div class="card-footer">
-                            <span class="tag">EVE-NG</span>
-                            <span class="tag">Cisco IOS</span>
-                            <span class="tag">VLANs</span>
-                        </div>
-                    </article>
-
-                    <!-- SAE 2.01: Réseau petite structure -->
-                    <article class="competency-card full-width">
-                        <header>
-                            <h2>SAE 2.01 - Construire un réseau informatique pour une petite structure</h2>
-                            <h3>Simulation GNS3 avec VLANs et Services</h3>
-                        </header>
-                        <div class="card-content">
-                            <h4>Contexte</h4>
-                            <p>Ce projet à réaliser seul avait pour objectif de consolider notre savoir faire sur du
-                                matériel réseau. Nous devions construire un réseau local constitué de routeurs et de
-                                commutateurs avec des règles de sécurité.</p>
-                            <p>Pour la sécurité, le réseau comportait différents VLANs : Administration, développeur et
-                                administrateur.</p>
-                            <p>Nous devions découper le réseau pour le partager à ces VLANs pour faire en sorte que tout
-                                communique puis y ajouter les règles. Il fallait également déployer des services sur des
-                                serveurs et relier notre simulation à celles d'autres élèves.</p>
-
-                            <h4>Ce que nous avons fait</h4>
-                            <p><strong>Simulation sur GNS3</strong></p>
-                            <p>Nous devions réaliser la simulation du réseau sur le logiciel GNS3, installé sur des
-                                machines Linux Debian de l'IUT. Pour utiliser les postes, routeurs, switch et serveurs
-                                dans la simulation, il fallait d'abord importer les images dans le logiciel.</p>
-                            <p>Une fois les équipements mis en place, nous il fallait configurer les adresses IPs et les
-                                interfaces des switch ainsi que les VLANs. Il y avait trois liens entre ces derniers
-                                pour optimiser le trafic et permettre une redondance en cas de panne. Les routeurs
-                                partageaient leur table de routage et le Switch2 était de niveau 3. Nous devions mettre
-                                en place un serveur web ainsi qu'un serveur de fichier FTP. Des ACLs étaient aussi à
-                                configurer, ce sont des règles qui autorisent ou non des trafiques, il en fallait
-                                obligatoirement pour l'interconnexion avec d'autres réseau et pour respecter le cahier
-                                des charges.</p>
-                            <p>Cette simulation était bien plus complexe que celle que nous avions pu réaliser sous
-                                EVE-NG au premier semestre a cause des services, des configurations de plusieurs switch
-                                et routeurs. Notamment le spanning-tree entre les routeurs et le passage d'un switch au
-                                niveau 3 du réseau.</p>
-                            <p>Je n'ai pas réussi à faire l'interconnexion avec d'autres simulation durant le projet
-                                mais plus tard j'ai compris comment il fallait faire, c'est en utilisant le protocole
-                                NAT.</p>
-
-                            <div class="project-images">
-                                <img src="images/sae201-gns3.png" alt="Simulation GNS3 SAE 2.01"
-                                    class="img-fluid border-neon">
-                            </div>
-
-                            <h4>Compétences validées</h4>
-                            <ul>
-                                <li>Le projet a participé à l'<strong>AC11.02</strong> | Comprendre l'architecture et
-                                    les fondements des systèmes numériques, les principes du codage de l'information,
-                                    des communications et de l'Internet.</li>
-                                <li>L'<strong>AC11.03</strong> | Configurer les fonctions de base du réseau local a été
-                                    validé en configurant : Les IPs, les VLANs, le serveur Web Linux, le routage et le
-                                    NAT.</li>
-                                <li>C'est en utilisant GNS3 sous le poste Debian, en important les images des routeurs
-                                    et PCs et en exportant mes configurations ce projet a participé à mon acquisition de
-                                    l'<strong>AC11.04</strong> | Maîtriser les rôles et les principes fondamentaux des
-                                    systèmes d'exploitation afin d'interagir avec ceux-ci pour la configuration et
-                                    l'administration des réseaux et services fournis.</li>
-                                <li>Principalement durant la configurations des routeurs et switch j'ai fait appel à
-                                    l'<strong>AC11.05</strong> | Identifier les dysfonctionnements du réseau local et
-                                    savoir les signaler.</li>
-                                <li>Avec l'importation des images et la configurations des PCs et des serveurs Linux,
-                                    j'ai pu valider l'<strong>AC11.06</strong> | Installer un poste client, expliquer la
-                                    procédure mise en place.</li>
-                            </ul>
-                        </div>
-                        <div class="card-footer">
-                            <span class="tag">GNS3</span>
-                            <span class="tag">VLANs</span>
-                            <span class="tag">ACLs</span>
-                            <span class="tag">Spanning-Tree</span>
-                            <a href="fichiers/SAE-201-Commandes.txt" download class="btn-link">Fichier de commandes</a>
-                        </div>
-                    </article>
-
-                    <!-- SAE 2.04: Projet Intégratif -->
-                    <article class="competency-card full-width">
-                        <header>
-                            <h2>SAE 2.04 - Projet Intégratif (S2)</h2>
-                            <h3>Infrastructure Complète : Réseau, Système, Web & IoT</h3>
-                        </header>
-                        <div class="card-content">
-                            <h4>Contexte</h4>
-                            <p>Projet majeur de fin de première année visant à mobiliser l'ensemble des compétences :
-                                déploiement d'un réseau physique, téléphonie sur IP, et développement d'une solution IoT
-                                complète. Projet en groupe de trois avec quatre postes, un téléphone IP matériel, un
-                                routeur et un switch Cisco.</p>
-
-                            <h4>Réalisation</h4>
-
-                            <p><strong>Partie Réseau :</strong></p>
-                            <ul>
-                                <li>Configuration équipements Cisco (routeur et switch)</li>
-                                <li>Création de 4 VLANs : Voix, Utilisateur, Serveurs, Administrateurs</li>
-                                <li>Découpage réseau avec masque /26 (255.255.255.192)</li>
-                                <li>Configuration ACLs pour bloquer l'accès à certains sites et permettre
-                                    l'interconnexion</li>
-                                <li>Mise en place du routage entre VLANs</li>
-                            </ul>
-
-                            <p><strong>Partie Système :</strong></p>
-                            <ul>
-                                <li>Serveur Windows Server 2019 : Base de données MySQL, service DNS</li>
-                                <li>Serveur Linux Debian : Apache2 pour l'application web</li>
-                                <li>Services réseau : DNS, DHCP (sur routeur), FTP</li>
-                                <li>Configuration zones DNS pour résolution web, FTP et serveur</li>
-                            </ul>
-
-                            <p><strong>Partie IoT & Développement :</strong></p>
-                            <ul>
-                                <li>Script Python avec protocole MQTT pour collecte de données capteurs</li>
-                                <li>Réception données format : "Id=...,piece=...,date=...,temp=..."</li>
-                                <li>Parsing et insertion automatique dans base de données MySQL</li>
-                                <li>Système de cache pour stockage temporaire en cas de déconnexion</li>
-                            </ul>
-
-                            <p><strong>Partie Web :</strong></p>
-                            <ul>
-                                <li>Application Django (Python) déployée sur Apache2</li>
-                                <li>Visualisation des données capteurs dans un tableau</li>
-                                <li>Filtrage et graphique des températures</li>
-                                <li>Export des données en fichier CSV</li>
-                            </ul>
-
-                            <p><strong>Partie ToIP (Téléphonie sur IP) :</strong></p>
-                            <ul>
-                                <li>Installation Linphone sur deux postes (VLAN utilisateurs)</li>
-                                <li>Téléphone matériel branché sur VLAN voix avec alimentation PoE</li>
-                                <li>Configuration des IPs et comptes téléphoniques</li>
-                                <li>Tests d'appels et visioconférence à trois appareils</li>
-                            </ul>
-
-                            <div class="project-images grid-3">
-                                <img src="images/sae204-reseau.png" alt="Plan Réseau SAE 2.04"
-                                    class="img-fluid border-neon">
-                                <img src="images/sae204-bdd.png" alt="Schéma BDD" class="img-fluid border-neon">
-                                <img src="images/sae204-web.png" alt="Interface Web Django"
-                                    class="img-fluid border-neon">
-                            </div>
-                        </div>
-                        <div class="card-footer">
-                            <span class="tag">Cisco</span>
-                            <span class="tag">Python/Django</span>
-                            <span class="tag">MQTT</span>
-                            <span class="tag">Windows Server</span>
-                            <span class="tag">ToIP</span>
-                            <a href="https://github.com/JM-UHA/SAE2.04" target="_blank" class="btn-link">Voir sur
-                                GitHub</a>
-                        </div>
-                    </article>
-
+                <div class="section-header">
+                    <h1>BUT 1 — Première Année</h1>
+                    <p>Projets et SAÉs réalisés en première année de BUT R&T</p>
                 </div>
 
-                <!-- Compétence 2 : Connecter -->
-                <h2 id="competence-2" class="competency-separator">Compétence 2 : Connecter les entreprises et les
-                    usagers</h2>
-                <div class="competency-grid">
-                    <!-- SAE 1.03: Transmissions -->
-                    <article class="competency-card">
-                        <header>
-                            <h2>SAE 1.03 - Transmissions et Wifi</h2>
-                            <h3>Câblage et Réseaux Sans Fil</h3>
-                        </header>
-                        <div class="card-content">
-                            <h4>Contexte</h4>
-                            <p>Découverte de la couche physique et mise en place d'une infrastructure Wi-Fi
-                                professionnelle.</p>
-                            <h4>Réalisation</h4>
-                            <ul>
-                                <li>Réalisation de câblage RJ45 (Cat 7).</li>
-                                <li>Configuration d'un contrôleur Wifi Cisco (WLC 5500) et bornes LAP.</li>
-                                <li>Mesures de signal et simulation Packet Tracer.</li>
-                            </ul>
-                            <div class="project-images grid-2">
-                                <img src="images/sae103-mesures.png" alt="Mesures Wifi" class="img-fluid border-neon">
-                                <img src="images/sae103-cisco.png" alt="Simulation Packet Tracer"
-                                    class="img-fluid border-neon">
+                <!-- COMPÉTENCE 1 : ADMINISTRER -->
+                <div id="ac11" class="competence-group">
+                    <div class="competence-header">
+                        <div class="competence-icon administrer">🖧</div>
+                        <div class="competence-title">
+                            <h3>Administrer — Réseaux & Internet</h3>
+                            <p>AC11.01 à AC11.03</p>
+                        </div>
+                    </div>
+                    <div class="projects-grid">
+                        <!-- PROJETS À AJOUTER ICI -->
+                        <div class="project-card">
+                            <div class="project-card-content">
+                                <div class="project-card-header">
+                                    <h4 class="project-card-title">[En attente de contenu]</h4>
+                                    <span class="project-card-code">SAÉ 1.0x</span>
+                                </div>
+                                <p class="project-card-description"><em>Contenu à fournir par l'utilisateur</em></p>
                             </div>
                         </div>
-                        <div class="card-footer">
-                            <span class="tag">Cisco WLC</span>
-                            <span class="tag">Wi-Fi</span>
-                            <span class="tag">Câblage</span>
-                        </div>
-                    </article>
+                    </div>
                 </div>
 
-                <!-- Compétence 3 : Créer -->
-                <h2 id="competence-3" class="competency-separator">Compétence 3 : Créer des outils et applications</h2>
-                <div class="competency-grid">
-
-                    <!-- SAE 1.04 - Se présenter sur internet -->
-                    <article class="competency-card full-width">
-                        <h2>SAE 1.04 - Se présenter sur internet</h2>
-                        <div class="card-content">
-                            <h4>Contexte</h4>
-                            <p>Cette SAE avait pour but, dans un premier temps, de nous sensibiliser à notre identité
-                                numérique, puis à nous en créer une professionnelle positive notamment via la création
-                                d'une page web parlant de nous. Elle était à réaliser seul.</p>
-                            <p>Nous devions donc chercher toutes les traces qui existent de nous sur internet, juger si
-                                elles étaient positives ou négatives. Essayer de les supprimer ou de les modifier si ces
-                                dernières étaient négatives et en crée de nouvelles utiles pour notre image
-                                professionnelle.</p>
-                            <p>En suite, nous devions créer une page web décrivant notre parcours personnel dans le
-                                cadre professionnel ainsi qu'une présentant un centre d'intérêt. Il était recommandé de
-                                faire une version de ces pages en anglais.</p>
-
-                            <h4>Ce que j'ai fait</h4>
-                            <p><strong>Document de réflexion sur ma e-réputation</strong></p>
-                            <iframe src="fichiers/226237-Reflexion_Ereputation_Fritschy-Matheo.pdf" class="pdf-viewer"
-                                title="Réflexion e-réputation SAE 1.04"></iframe>
-                            <a href="fichiers/226237-Reflexion_Ereputation_Fritschy-Matheo.pdf" download
-                                class="pdf-link">📄 Télécharger le document</a>
-
-                            <p><strong>Programmation web</strong></p>
-                            <p>Nous avions appris en cours comment créer de simples pages web avec de la mise en page
-                                d'articles et quelques notions de design basique.</p>
-                            <p>Dans ce projet j'ai donc pu mettre tout cela en œuvre pour créer plusieurs pages reliées
-                                entre elles. J'ai également appris pas mal de choses au niveau du design.</p>
-                            <p>Les langages de programmation utilisés étaient le Html ainsi que le CSS.</p>
-
-                            <div class="project-images">
-                                <img src="images/228994-sitematheo.png" alt="Site web personnel - SAE 1.04"
-                                    class="img-fluid border-neon">
-                            </div>
-
-                            <h4>Compétences validées</h4>
-                            <ul>
-                                <li>L'<strong>AC13.01</strong> | Utiliser un système informatique et ses outils est
-                                    validée par cette SAE grâce à l'utilisation des outils Visual Studio Code ainsi que
-                                    Github avec git. Visual Code Studio est le logiciel qui m'a permis de coder le site.
-                                    Il possède plein d'extensions qui facilitent la programmation. Github et git sont
-                                    deux outils qui fonctionnent ensemble et qui permettent ensemble d'héberger un site
-                                    web et ses fichiers tout en créant des versions de ces derniers.</li>
-                                <li>Pour l'<strong>AC13.04</strong> | Connaître l'architecture et les technologies d'un
-                                    site Web, c'est en créant et hébergeant mon propre site Web. J'ai du organiser
-                                    l'ensemble des fichiers du site pour qu'il fonctionne et que son architecture soit
-                                    professionnelle.</li>
-                            </ul>
-
-                            <div class="card-footer">
-                                <span class="tag">HTML/CSS</span>
-                                <span class="tag">e-Réputation</span>
-                                <a href="https://fritschymatheo.github.io/SAE14_Se-presenter-sur-internet/"
-                                    target="_blank" class="btn-link">Voir le site</a>
-                                <a href="https://github.com/FritschyMatheo/SAE14_Se-presenter-sur-internet"
-                                    target="_blank" class="btn-link">GitHub</a>
+                <!-- COMPÉTENCE 2 : CONNECTER -->
+                <div id="ac12" class="competence-group">
+                    <div class="competence-header">
+                        <div class="competence-icon connecter">📡</div>
+                        <div class="competence-title">
+                            <h3>Connecter — Transmissions</h3>
+                            <p>AC12.01 à AC12.03</p>
+                        </div>
+                    </div>
+                    <div class="projects-grid">
+                        <!-- PROJETS À AJOUTER ICI -->
+                        <div class="project-card">
+                            <div class="project-card-content">
+                                <div class="project-card-header">
+                                    <h4 class="project-card-title">[En attente de contenu]</h4>
+                                    <span class="project-card-code">SAÉ 1.0x</span>
+                                </div>
+                                <p class="project-card-description"><em>Contenu à fournir par l'utilisateur</em></p>
                             </div>
                         </div>
-                    </article>
-
-                    <!-- SAE 1.05 - Traiter des données -->
-                    <article class="competency-card">
-                        <h2>SAE 1.05 : Traiter des données</h2>
-                        <div class="card-content">
-                            <h4>Contexte</h4>
-                            <p>Création d'un programme d'attaque et d'écoute réseau "Man in the Middle" (ARP Poisoning)
-                                en Python avec Scapy.</p>
-                            <h4>Réalisation</h4>
-                            <ul>
-                                <li>Développement de deux scripts Python avec la librairie Scapy.</li>
-                                <li>Observation du trafic et injection de paquets.</li>
-                                <li>Compréhension des mécanismes ARP et IP.</li>
-                            </ul>
-                            <div class="card-footer">
-                                <span class="tag">Python</span>
-                                <span class="tag">Scapy</span>
-                                <span class="tag">Réseau</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- SAE 2.03 - Solution informatique -->
-                    <article class="competency-card">
-                        <h2>SAE 2.03 : Solution Informatique pour l'Entreprise</h2>
-                        <div class="card-content">
-                            <h4>Contexte</h4>
-                            <p>Conception et déploiement d'une application web de gestion d'absences avec base de
-                                données.</p>
-                            <h4>Réalisation</h4>
-                            <ul>
-                                <li>Développement backend avec <strong>Python Django</strong>.</li>
-                                <li>Base de données <strong>MySQL</strong> hébergée sur VM Windows.</li>
-                                <li>Serveur web <strong>Apache2</strong> sur Linux.</li>
-                                <li>Gestion de projet (Gantt) et versionning (Git).</li>
-                            </ul>
-                            <div class="card-footer">
-                                <span class="tag">Django</span>
-                                <span class="tag">MySQL</span>
-                                <span class="tag">Apache2</span>
-                                <a href="https://github.com/FritschyMatheo/Site-Gestion-Absences" target="_blank"
-                                    class="btn-link">GitHub</a>
-                            </div>
-                        </div>
-                    </article>
-
+                    </div>
                 </div>
+
+                <!-- COMPÉTENCE 3 : PROGRAMMER -->
+                <div id="ac13" class="competence-group">
+                    <div class="competence-header">
+                        <div class="competence-icon programmer">💻</div>
+                        <div class="competence-title">
+                            <h3>Programmer — Développement</h3>
+                            <p>AC13.01 à AC13.03</p>
+                        </div>
+                    </div>
+                    <div class="projects-grid">
+                        <!-- PROJETS À AJOUTER ICI -->
+                        <div class="project-card">
+                            <div class="project-card-content">
+                                <div class="project-card-header">
+                                    <h4 class="project-card-title">[En attente de contenu]</h4>
+                                    <span class="project-card-code">SAÉ 1.0x</span>
+                                </div>
+                                <p class="project-card-description"><em>Contenu à fournir par l'utilisateur</em></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
     </main>
 
-    <footer>
+    <!-- FOOTER -->
+    <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Mathéo FRITSCHY. Tous droits réservés.</p>
+            <p>© 2024 Mathéo Fritschy — Portfolio BUT R&T Cybersécurité</p>
         </div>
     </footer>
-    <script src="script.js"></script>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>

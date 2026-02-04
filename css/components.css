@@ -1,0 +1,400 @@
+/* ==========================================================================
+   COMPOSANTS RÉUTILISABLES
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   COMPETENCE TAGS
+   -------------------------------------------------------------------------- */
+.tag {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-xs);
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: var(--radius-sm);
+    font-size: 0.8rem;
+    font-weight: 500;
+    background: var(--cyber-bg-alt);
+    color: var(--cyber-text);
+    border: 1px solid var(--cyber-border);
+}
+
+/* Tags par compétence */
+.tag-administrer {
+    background: rgba(37, 99, 235, 0.1);
+    color: #1d4ed8;
+    border-color: rgba(37, 99, 235, 0.3);
+}
+
+.tag-connecter {
+    background: rgba(16, 185, 129, 0.1);
+    color: #059669;
+    border-color: rgba(16, 185, 129, 0.3);
+}
+
+.tag-programmer {
+    background: rgba(139, 92, 246, 0.1);
+    color: #7c3aed;
+    border-color: rgba(139, 92, 246, 0.3);
+}
+
+.tag-securiser {
+    background: rgba(220, 38, 38, 0.1);
+    color: #dc2626;
+    border-color: rgba(220, 38, 38, 0.3);
+}
+
+.tag-surveiller {
+    background: rgba(245, 158, 11, 0.1);
+    color: #d97706;
+    border-color: rgba(245, 158, 11, 0.3);
+}
+
+/* Tags technos */
+.tag-tech {
+    background: var(--cyber-primary);
+    color: white;
+    border: none;
+    font-size: 0.75rem;
+}
+
+/* --------------------------------------------------------------------------
+   PROJECT CARDS
+   -------------------------------------------------------------------------- */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: var(--space-lg);
+}
+
+.project-card {
+    background: white;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--cyber-border);
+    overflow: hidden;
+    transition: all var(--transition-base);
+    position: relative;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--cyber-accent);
+}
+
+.project-card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    background: var(--cyber-bg-alt);
+}
+
+.project-card-content {
+    padding: var(--space-lg);
+}
+
+.project-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: var(--space-sm);
+}
+
+.project-card-title {
+    font-size: 1.1rem;
+    color: var(--cyber-primary);
+    margin: 0;
+}
+
+.project-card-code {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--cyber-text-light);
+    background: var(--cyber-bg-alt);
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: var(--radius-sm);
+}
+
+.project-card-description {
+    color: var(--cyber-text-light);
+    font-size: 0.95rem;
+    margin-bottom: var(--space-md);
+    line-height: 1.5;
+}
+
+.project-card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-xs);
+    margin-bottom: var(--space-md);
+}
+
+.project-card-footer {
+    display: flex;
+    gap: var(--space-sm);
+}
+
+.project-card-link {
+    font-size: 0.85rem;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-xs);
+}
+
+/* --------------------------------------------------------------------------
+   COMPETENCE MATRIX
+   -------------------------------------------------------------------------- */
+.matrix-container {
+    overflow-x: auto;
+}
+
+.competence-group {
+    margin-bottom: var(--space-2xl);
+}
+
+.competence-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    padding: var(--space-md) var(--space-lg);
+    background: var(--cyber-bg-alt);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--space-lg);
+}
+
+.competence-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-md);
+    font-size: 1.5rem;
+}
+
+.competence-icon.administrer {
+    background: rgba(37, 99, 235, 0.15);
+}
+
+.competence-icon.connecter {
+    background: rgba(16, 185, 129, 0.15);
+}
+
+.competence-icon.programmer {
+    background: rgba(139, 92, 246, 0.15);
+}
+
+.competence-icon.securiser {
+    background: rgba(220, 38, 38, 0.15);
+}
+
+.competence-icon.surveiller {
+    background: rgba(245, 158, 11, 0.15);
+}
+
+.competence-title {
+    flex: 1;
+}
+
+.competence-title h3 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.competence-title p {
+    margin: 0;
+    color: var(--cyber-text-light);
+    font-size: 0.9rem;
+}
+
+/* AC List */
+.ac-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--space-md);
+}
+
+.ac-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    padding: var(--space-md);
+    background: white;
+    border: 1px solid var(--cyber-border);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.ac-item:hover {
+    border-color: var(--cyber-accent);
+    background: var(--cyber-bg-alt);
+}
+
+.ac-code {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--cyber-accent);
+    white-space: nowrap;
+}
+
+.ac-description {
+    font-size: 0.9rem;
+    color: var(--cyber-text);
+    flex: 1;
+}
+
+.ac-count {
+    font-size: 0.75rem;
+    color: var(--cyber-text-light);
+    background: var(--cyber-bg-alt);
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: var(--radius-sm);
+}
+
+/* --------------------------------------------------------------------------
+   HOBBIES CARDS (Nature Theme)
+   -------------------------------------------------------------------------- */
+.hobbies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-lg);
+}
+
+.hobby-card {
+    background: white;
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+    text-align: center;
+    border: 2px solid var(--nature-accent);
+    transition: all var(--transition-base);
+}
+
+.hobby-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(45, 80, 22, 0.15);
+}
+
+.hobby-icon {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto var(--space-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--nature-bg);
+    border-radius: 50%;
+    font-size: 2rem;
+}
+
+.hobby-card h3 {
+    color: var(--nature-primary);
+    margin-bottom: var(--space-sm);
+}
+
+.hobby-card p {
+    color: var(--nature-text);
+    font-size: 0.95rem;
+}
+
+/* --------------------------------------------------------------------------
+   CV SECTION
+   -------------------------------------------------------------------------- */
+.cv-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-xl);
+    padding: var(--space-2xl);
+    background: linear-gradient(135deg, var(--cyber-primary) 0%, #2d4a6f 100%);
+    border-radius: var(--radius-xl);
+    color: white;
+    text-align: center;
+}
+
+.cv-section h2 {
+    color: white;
+    margin-bottom: var(--space-sm);
+}
+
+.cv-section p {
+    opacity: 0.9;
+    margin-bottom: var(--space-lg);
+}
+
+/* --------------------------------------------------------------------------
+   YEAR TABS (BUT1, BUT2, BUT3)
+   -------------------------------------------------------------------------- */
+.year-tabs {
+    display: flex;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-xl);
+    border-bottom: 2px solid var(--cyber-border);
+    padding-bottom: var(--space-sm);
+}
+
+.year-tab {
+    padding: var(--space-sm) var(--space-lg);
+    font-weight: 600;
+    color: var(--cyber-text-light);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: color var(--transition-fast);
+}
+
+.year-tab:hover {
+    color: var(--cyber-accent);
+}
+
+.year-tab.active {
+    color: var(--cyber-accent);
+}
+
+.year-tab.active::after {
+    content: '';
+    position: absolute;
+    bottom: calc(-1 * var(--space-sm) - 2px);
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--cyber-accent);
+}
+
+/* --------------------------------------------------------------------------
+   SECTION HEADERS
+   -------------------------------------------------------------------------- */
+.section-header {
+    text-align: center;
+    margin-bottom: var(--space-2xl);
+}
+
+.section-header h2 {
+    margin-bottom: var(--space-sm);
+}
+
+.section-header p {
+    color: var(--cyber-text-light);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* --------------------------------------------------------------------------
+   RESPONSIVE ADJUSTMENTS
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ac-list {
+        grid-template-columns: 1fr;
+    }
+
+    .cv-section {
+        flex-direction: column;
+        text-align: center;
+    }
+}

@@ -1,0 +1,344 @@
+{
+    "competences": [
+        {
+            "id": "administrer",
+            "code": "C1",
+            "name": "Administrer",
+            "description": "Administrer les réseaux et l'Internet",
+            "icon": "🖧",
+            "color": "blue",
+            "acs": {
+                "but1": [
+                    {
+                        "code": "AC11.01",
+                        "description": "Maîtriser les lois fondamentales de l'électricité afin d'intervenir sur des équipements de réseaux et télécommunications"
+                    },
+                    {
+                        "code": "AC11.02",
+                        "description": "Comprendre l'architecture et les fondements des systèmes numériques, les principes du codage de l'information, des communications et de l'Internet"
+                    },
+                    {
+                        "code": "AC11.03",
+                        "description": "Configurer les fonctions de base du réseau local"
+                    },
+                    {
+                        "code": "AC11.04",
+                        "description": "Maîtriser les rôles et les principes fondamentaux des systèmes d'exploitation afin d'interagir avec ceux-ci pour la configuration et l'administration des réseaux et services fournis"
+                    },
+                    {
+                        "code": "AC11.05",
+                        "description": "Identifier les dysfonctionnements du réseau local et savoir les signaler"
+                    },
+                    {
+                        "code": "AC11.06",
+                        "description": "Installer un poste client, expliquer la procédure mise en place"
+                    }
+                ],
+                "but2": [
+                    {
+                        "code": "AC21.01",
+                        "description": "Configurer et dépanner le routage dynamique dans un réseau"
+                    },
+                    {
+                        "code": "AC21.02",
+                        "description": "Configurer et expliquer une politique simple de QoS et les fonctions de base de la sécurité d'un réseau"
+                    },
+                    {
+                        "code": "AC21.03",
+                        "description": "Déployer des postes clients et des solutions virtualisées adaptées à une situation donnée"
+                    },
+                    {
+                        "code": "AC21.04",
+                        "description": "Déployer des services réseaux avancés"
+                    },
+                    {
+                        "code": "AC21.05",
+                        "description": "Identifier les réseaux opérateurs et l'architecture d'Internet"
+                    },
+                    {
+                        "code": "AC21.06",
+                        "description": "Travailler en équipe pour développer ses compétences professionnelles"
+                    }
+                ],
+                "but3": [
+                    {
+                        "code": "AC31.01",
+                        "description": "Concevoir un projet de réseau informatique d'une entreprise en intégrant les problématiques de haute disponibilité, de QoS, de sécurité et de supervision"
+                    },
+                    {
+                        "code": "AC31.02",
+                        "description": "Réaliser la documentation technique de ce projet"
+                    },
+                    {
+                        "code": "AC31.03",
+                        "description": "Réaliser une maquette de démonstration du projet"
+                    },
+                    {
+                        "code": "AC31.04",
+                        "description": "Défendre/argumenter un projet"
+                    },
+                    {
+                        "code": "AC31.05",
+                        "description": "Communiquer avec les acteurs du projet"
+                    },
+                    {
+                        "code": "AC31.06",
+                        "description": "Gérer le projet et les différentes étapes de sa mise en œuvre en respectant les délais"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "connecter",
+            "code": "C2",
+            "name": "Connecter",
+            "description": "Connecter les entreprises et les usagers (transmissions & ToIP)",
+            "icon": "📡",
+            "color": "green",
+            "acs": {
+                "but1": [
+                    {
+                        "code": "AC12.01",
+                        "description": "Mesurer, analyser et commenter les signaux"
+                    },
+                    {
+                        "code": "AC12.02",
+                        "description": "Caractériser des systèmes de transmissions élémentaires et découvrir la modélisation mathématique de leur fonctionnement"
+                    },
+                    {
+                        "code": "AC12.03",
+                        "description": "Déployer des supports de transmission"
+                    },
+                    {
+                        "code": "AC12.04",
+                        "description": "Connecter les systèmes de ToIP"
+                    },
+                    {
+                        "code": "AC12.05",
+                        "description": "Communiquer avec un tiers (client, collaborateur...) et adapter son discours et sa langue à son interlocuteur"
+                    }
+                ],
+                "but2": [
+                    {
+                        "code": "AC22.01",
+                        "description": "Déployer et caractériser des systèmes de transmissions complexes"
+                    },
+                    {
+                        "code": "AC22.02",
+                        "description": "Mettre en place un accès distant sécurisé"
+                    },
+                    {
+                        "code": "AC22.03",
+                        "description": "Mettre en place une connexion multi-site via un réseau opérateur"
+                    },
+                    {
+                        "code": "AC22.04",
+                        "description": "Déployer des réseaux d'accès des opérateurs"
+                    },
+                    {
+                        "code": "AC22.05",
+                        "description": "Capacité à questionner un cahier des charges RT"
+                    }
+                ],
+                "but3": [
+                    {
+                        "code": "AC32.01",
+                        "description": "Déployer un système de communication pour l'entreprise"
+                    },
+                    {
+                        "code": "AC32.02",
+                        "description": "Déployer un réseau d'accès sans fil pour le réseau d'entreprise en intégrant les enjeux de la sécurité"
+                    },
+                    {
+                        "code": "AC32.03",
+                        "description": "Déployer un réseau d'accès fixe ou mobile pour un opérateur de télécommunications en intégrant la sécurité"
+                    },
+                    {
+                        "code": "AC32.04",
+                        "description": "Permettre aux collaborateurs de se connecter de manière sécurisée au système d'information de l'entreprise"
+                    },
+                    {
+                        "code": "AC32.05",
+                        "description": "Collaborer en mode projet en français et en anglais"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "programmer",
+            "code": "C3",
+            "name": "Programmer",
+            "description": "Créer des outils et applications pour les R&T (développement & automatisation)",
+            "icon": "💻",
+            "color": "purple",
+            "acs": {
+                "but1": [
+                    {
+                        "code": "AC13.01",
+                        "description": "Utiliser un système informatique et ses outils"
+                    },
+                    {
+                        "code": "AC13.02",
+                        "description": "Lire, exécuter, corriger et modifier un programme"
+                    },
+                    {
+                        "code": "AC13.03",
+                        "description": "Traduire un algorithme, dans un langage et pour un environnement donné"
+                    },
+                    {
+                        "code": "AC13.04",
+                        "description": "Connaître l'architecture et les technologies d'un site Web"
+                    },
+                    {
+                        "code": "AC13.05",
+                        "description": "Choisir les mécanismes de gestion de données adaptés au développement de l'outil et argumenter ses choix"
+                    },
+                    {
+                        "code": "AC13.06",
+                        "description": "S'intégrer dans un environnement propice au développement et au travail collaboratif"
+                    }
+                ],
+                "but2": [
+                    {
+                        "code": "AC23.01",
+                        "description": "Automatiser l'administration système avec des scripts"
+                    },
+                    {
+                        "code": "AC23.02",
+                        "description": "Développer une application à partir d'un cahier des charges donné, pour le Web ou les périphériques mobiles"
+                    },
+                    {
+                        "code": "AC23.03",
+                        "description": "Utiliser un protocole réseau pour programmer une application client/serveur"
+                    },
+                    {
+                        "code": "AC23.04",
+                        "description": "Installer, administrer un système de gestion de données"
+                    },
+                    {
+                        "code": "AC23.05",
+                        "description": "Accéder à un ensemble de données depuis une application et/ou un site web"
+                    }
+                ],
+                "but3": [
+                    {
+                        "code": "AC33.01",
+                        "description": "Élaborer les spécifications techniques et le cahier des charges d'une application informatique"
+                    },
+                    {
+                        "code": "AC33.02",
+                        "description": "Mettre en place un environnement de travail collaboratif"
+                    },
+                    {
+                        "code": "AC33.03",
+                        "description": "Participer à la formation des utilisateurs"
+                    },
+                    {
+                        "code": "AC33.04",
+                        "description": "Déployer et maintenir une solution informatique"
+                    },
+                    {
+                        "code": "AC33.05",
+                        "description": "S'informer sur les évolutions et les nouveautés technologiques"
+                    },
+                    {
+                        "code": "AC33.06",
+                        "description": "Sécuriser l'environnement numérique d'une application"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "securiser",
+            "code": "C4",
+            "name": "Sécuriser",
+            "description": "Administrer un système d'information sécurisé (Spé Cybersécurité)",
+            "icon": "🛡️",
+            "color": "red",
+            "acs": {
+                "but2": [
+                    {
+                        "code": "AC24.01Cyber",
+                        "description": "Connaître et utiliser les bonnes pratiques et les recommandations de cybersécurité"
+                    },
+                    {
+                        "code": "AC24.02Cyber",
+                        "description": "Mettre en œuvre les outils fondamentaux de sécurisation d'une infrastructure du réseau"
+                    },
+                    {
+                        "code": "AC24.03Cyber",
+                        "description": "Sécuriser les services"
+                    },
+                    {
+                        "code": "AC24.04Cyber",
+                        "description": "Choisir les outils cryptographiques adaptés au besoin fonctionnel du système d'information"
+                    },
+                    {
+                        "code": "AC24.05Cyber",
+                        "description": "Connaître les différents types d'attaque"
+                    },
+                    {
+                        "code": "AC24.06Cyber",
+                        "description": "Comprendre des documents techniques en anglais"
+                    }
+                ],
+                "but3": [
+                    {
+                        "code": "AC34.01Cyber",
+                        "description": "Participer activement à une analyse de risque pour définir une politique de sécurité pour une petite structure"
+                    },
+                    {
+                        "code": "AC34.02Cyber",
+                        "description": "Mettre en œuvre des outils avancés de sécurisation d'une infrastructure du réseau"
+                    },
+                    {
+                        "code": "AC34.03Cyber",
+                        "description": "Sécuriser les systèmes d'exploitation"
+                    },
+                    {
+                        "code": "AC34.04Cyber",
+                        "description": "Proposer une architecture sécurisée de système d'information pour une petite structure"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "surveiller",
+            "code": "C5",
+            "name": "Surveiller",
+            "description": "Surveiller un système d'information sécurisé (Audit, Pentest, Incident)",
+            "icon": "🔍",
+            "color": "orange",
+            "acs": {
+                "but2": [
+                    {
+                        "code": "AC25.01Cyber",
+                        "description": "Administrer les protections contre les logiciels malveillants"
+                    },
+                    {
+                        "code": "AC25.02Cyber",
+                        "description": "Prendre en main des outils de test de pénétration réseau/système"
+                    }
+                ],
+                "but3": [
+                    {
+                        "code": "AC35.01Cyber",
+                        "description": "Surveiller l'activité du système d'information"
+                    },
+                    {
+                        "code": "AC35.02Cyber",
+                        "description": "Appliquer une méthodologie de tests de pénétration"
+                    },
+                    {
+                        "code": "AC35.03Cyber",
+                        "description": "Réagir face à un incident de sécurité"
+                    },
+                    {
+                        "code": "AC35.04Cyber",
+                        "description": "Administrer les outils de surveillance du système d'information"
+                    }
+                ]
+            }
+        }
+    ]
+}
