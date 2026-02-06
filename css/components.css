@@ -141,6 +141,198 @@
     gap: var(--space-xs);
 }
 
+/* Project Card Expanded - Pour les projets avec contenu détaillé */
+.project-card-expanded {
+    grid-column: 1 / -1;
+    /* Prend toute la largeur */
+}
+
+.project-card-expanded .project-card-header {
+    margin-bottom: var(--space-lg);
+    padding-bottom: var(--space-md);
+    border-bottom: 1px solid var(--cyber-border);
+}
+
+.project-card-expanded .project-card-title {
+    font-size: 1.3rem;
+}
+
+/* Sections de projet */
+.project-section {
+    margin-bottom: var(--space-lg);
+}
+
+.project-section:last-child {
+    margin-bottom: 0;
+}
+
+.project-section h5 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--cyber-primary);
+    margin-bottom: var(--space-sm);
+}
+
+.project-section p {
+    color: var(--cyber-text);
+    line-height: 1.6;
+    margin-bottom: var(--space-sm);
+}
+
+.project-section p:last-child {
+    margin-bottom: 0;
+}
+
+/* Video Container - YouTube Embed Responsive */
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    /* Ratio 16:9 */
+    height: 0;
+    overflow: hidden;
+    border-radius: var(--radius-md);
+    background: var(--cyber-bg-alt);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: var(--radius-md);
+}
+
+/* Liste de compétences validées */
+.competences-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.competence-item {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-md);
+    padding: var(--space-md);
+    background: var(--cyber-bg-alt);
+    border-radius: var(--radius-md);
+    border-left: 3px solid var(--cyber-accent);
+}
+
+.competence-badge {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: white;
+    background: linear-gradient(135deg, var(--cyber-accent), var(--cyber-primary));
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: var(--radius-sm);
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.competence-item p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--cyber-text);
+}
+
+.competence-item em {
+    color: var(--cyber-text-light);
+    font-style: italic;
+}
+
+/* Project Content Split (texte + image) */
+.project-content-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-lg);
+    align-items: start;
+}
+
+.project-text p {
+    margin-bottom: var(--space-sm);
+}
+
+.project-text p:last-child {
+    margin-bottom: 0;
+}
+
+.project-text code {
+    background: var(--cyber-bg-alt);
+    padding: 2px 6px;
+    border-radius: var(--radius-sm);
+    font-family: var(--font-mono);
+    font-size: 0.85em;
+}
+
+.project-image {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.project-image img {
+    max-width: 100%;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--cyber-border);
+    box-shadow: var(--shadow-md);
+}
+
+.zoomable-image {
+    cursor: zoom-in;
+    transition: transform var(--transition-base);
+}
+
+.zoomable-image:hover {
+    transform: scale(1.02);
+}
+
+@media (max-width: 900px) {
+    .project-content-split {
+        grid-template-columns: 1fr;
+    }
+
+    .project-image {
+        order: -1;
+    }
+}
+
+/* Project Resources (liens vers fichiers) */
+.project-resources {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+    margin-top: var(--space-md);
+    padding-top: var(--space-md);
+    border-top: 1px solid var(--cyber-border);
+}
+
+.resource-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-xs);
+    padding: var(--space-sm) var(--space-md);
+    background: var(--cyber-bg-alt);
+    color: var(--cyber-primary);
+    font-size: 0.85rem;
+    font-weight: 500;
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    border: 1px solid var(--cyber-border);
+    transition: all var(--transition-fast);
+}
+
+.resource-link:hover {
+    background: var(--cyber-primary);
+    color: white;
+    border-color: var(--cyber-primary);
+}
+
 /* --------------------------------------------------------------------------
    COMPETENCE MATRIX
    -------------------------------------------------------------------------- */
@@ -270,6 +462,113 @@
     background: var(--cyber-bg-alt);
     padding: var(--space-xs) var(--space-sm);
     border-radius: var(--radius-sm);
+}
+
+/* --------------------------------------------------------------------------
+   MATRIX - NEW SIMPLIFIED LAYOUT
+   -------------------------------------------------------------------------- */
+.matrix-year-section {
+    margin-bottom: var(--space-lg);
+    background: white;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--cyber-border);
+    overflow: hidden;
+}
+
+.matrix-year-title {
+    background: var(--cyber-bg-alt);
+    padding: var(--space-sm) var(--space-md);
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--cyber-primary);
+    border-bottom: 1px solid var(--cyber-border);
+}
+
+.matrix-row {
+    display: flex;
+    gap: var(--space-lg);
+    padding: var(--space-md);
+}
+
+/* Liste simplifiée des ACs */
+.ac-simple-list {
+    flex: 1;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+}
+
+.ac-simple-list li {
+    font-size: 0.85rem;
+    color: var(--cyber-text);
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: var(--space-xs) 0;
+}
+
+.ac-code-mini {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--cyber-accent);
+    background: rgba(37, 99, 235, 0.1);
+    padding: 2px 6px;
+    border-radius: var(--radius-sm);
+    white-space: nowrap;
+}
+
+/* Boutons SAÉ */
+.sae-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+    align-content: flex-start;
+    min-width: 200px;
+}
+
+.sae-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-sm) var(--space-md);
+    background: linear-gradient(135deg, var(--cyber-accent), var(--cyber-primary));
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    transition: all var(--transition-fast);
+    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.3);
+}
+
+.sae-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+}
+
+.sae-placeholder {
+    font-size: 0.8rem;
+    color: var(--cyber-text-light);
+    font-style: italic;
+    padding: var(--space-sm);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .matrix-row {
+        flex-direction: column;
+    }
+
+    .sae-buttons {
+        min-width: 100%;
+        padding-top: var(--space-md);
+        border-top: 1px solid var(--cyber-border);
+    }
 }
 
 /* --------------------------------------------------------------------------

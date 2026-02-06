@@ -52,14 +52,238 @@
                         </div>
                     </div>
                     <div class="projects-grid">
-                        <!-- PROJETS À AJOUTER ICI -->
-                        <div class="project-card">
+                        <div id="sae101" class="project-card project-card-expanded">
                             <div class="project-card-content">
                                 <div class="project-card-header">
-                                    <h4 class="project-card-title">[En attente de contenu]</h4>
-                                    <span class="project-card-code">SAÉ 1.0x</span>
+                                    <h4 class="project-card-title">Sensibilisation à l'hygiène informatique et à la
+                                        cybersécurité</h4>
+                                    <span class="project-card-code">SAÉ 1.01</span>
                                 </div>
-                                <p class="project-card-description"><em>Contenu à fournir par l'utilisateur</em></p>
+
+                                <div class="project-section">
+                                    <h5>📋 Contexte</h5>
+                                    <p>Le principal but de cette SAE de début d'année était de nous faire chercher des
+                                        informations sur différents sujets liés à la formation. Notre groupe a travaillé
+                                        sur le thème <strong>Cybersécurité et Cyberguerre</strong>. D'autres groupes
+                                        avaient des sujets comme les malwares ou la sécurité des mots de passe.</p>
+                                    <p>Après nos recherches, nous devions réaliser une <strong>présentation
+                                            orale</strong> puis une <strong>vidéo</strong> sur notre sujet. Nous étions
+                                        en groupe de deux.</p>
+                                </div>
+
+                                <div class="project-section">
+                                    <h5>🎬 Ce que nous avons fait</h5>
+                                    <div class="video-container">
+                                        <iframe src="https://www.youtube.com/embed/UoCdsWYY0Lw"
+                                            title="SAÉ 1.01 - Cybersécurité et Cyberguerre" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                </div>
+
+                                <div class="project-section">
+                                    <h5>✅ Compétences validées</h5>
+                                    <div class="competences-list">
+                                        <div class="competence-item">
+                                            <span class="competence-badge">AC11.02</span>
+                                            <p>Durant nos recherches, nous nous sommes informés sur la cybersécurité et
+                                                avons donc vu des choses aussi par rapport à l'internet et la
+                                                communication pour <em>Comprendre l'architecture et les fondements des
+                                                    systèmes numériques, les principes du codage de l'information, des
+                                                    communications et de l'Internet</em>.</p>
+                                        </div>
+                                        <div class="competence-item">
+                                            <span class="competence-badge">AC11.04</span>
+                                            <p>Nous avons assisté aux présentations des autres élèves dont certains
+                                                parlaient de failles de sécurités ou de types d'attaques, ce qui
+                                                contribue à <em>Maîtriser les rôles et les principes fondamentaux des
+                                                    systèmes d'exploitation afin d'interagir avec ceux-ci pour la
+                                                    configuration et l'administration des réseaux et services
+                                                    fournis</em>.</p>
+                                        </div>
+                                        <div class="competence-item">
+                                            <span class="competence-badge">AC11.05</span>
+                                            <p>L'<em>Identifier les dysfonctionnements du réseau local et savoir les
+                                                    signaler</em> a été légèrement impacté dans certaines présentations
+                                                mais ce n'est pas dans ce projet qu'il est le plus validé.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SAÉ 1.02 -->
+                        <div id="sae102" class="project-card project-card-expanded">
+                            <div class="project-card-content">
+                                <div class="project-card-header">
+                                    <h4 class="project-card-title">S'initier aux réseaux informatiques</h4>
+                                    <span class="project-card-code">SAÉ 1.02</span>
+                                </div>
+
+                                <div class="project-section">
+                                    <h5>📋 Contexte</h5>
+                                    <p>Cette SAE était à faire seul, elle consistait à la mise en place d'un petit
+                                        réseau d'une succursale pour une entreprise. Il fallait créer un réseau simulé
+                                        sous le logiciel <strong>EVE-NG</strong>.</p>
+                                    <p>Habituellement, nous utilisions Cisco Packet Tracer pour simuler des topologies
+                                        réseau mais nous avons dû apprendre à utiliser ce nouveau logiciel. Les grandes
+                                        différences : EVE-NG propose d'autres fabricants que Cisco et utilise de vraies
+                                        images de systèmes d'exploitation, ce qui est plus réaliste mais consomme plus
+                                        de ressources.</p>
+                                </div>
+
+                                <div class="project-section">
+                                    <h5>🔧 Ce que nous avons fait</h5>
+                                    <div class="project-content-split">
+                                        <div class="project-text">
+                                            <p>Nous avons pris en main l'outil EVE-NG lors des premières séances. Il y
+                                                avait <strong>4 VLANs</strong> à créer et configurer avec différents
+                                                nombres d'hôtes chacun.</p>
+                                            <p>Avant de placer les éléments, nous avons dû choisir les bons switch et
+                                                routeurs selon leurs caractéristiques techniques : nombre de ports, PoE,
+                                                vitesse.</p>
+                                            <p>Le serveur Linux devait aussi être configuré pour communiquer avec le
+                                                réseau. Pour optimiser les sous-réseaux, nous avons utilisé des masques
+                                                <code>/27</code>, <code>/28</code> et <code>/29</code>. Le réseau
+                                                comprenait également un service <strong>DHCP</strong>.
+                                            </p>
+                                            <p>En tant que SAE du premier semestre, mise à part la prise en main de
+                                                l'outil qui était assez compliquée au début, elle était très
+                                                intéressante et pas si compliquée avec du recul.</p>
+                                        </div>
+                                        <div class="project-image">
+                                            <img src="images/sae102-eveng.png" alt="Schéma réseau EVE-NG"
+                                                class="zoomable-image">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="project-section">
+                                    <h5>✅ Compétences validées</h5>
+                                    <div class="competences-list">
+                                        <div class="competence-item">
+                                            <span class="competence-badge">AC11.01</span>
+                                            <p>Nous avons abordé l'AC en analysant les caractéristiques des différents
+                                                équipements (switch et routeurs) à utiliser dans la simulation.</p>
+                                        </div>
+                                        <div class="competence-item">
+                                            <span class="competence-badge">AC11.02</span>
+                                            <p>C'est avec le découpage du réseau et la configuration des différents
+                                                masques et le DHCP que l'on valide cet AC sur l'architecture et le
+                                                codage de l'information.</p>
+                                        </div>
+                                        <div class="competence-item">
+                                            <span class="competence-badge">AC11.03</span>
+                                            <p>Validé en configurant le serveur DHCP, les VLANs et les sous-réseaux de
+                                                la simulation.</p>
+                                        </div>
+                                        <div class="competence-item">
+                                            <span class="competence-badge">AC11.04</span>
+                                            <p>La configuration du serveur Linux et la mise en place des interfaces
+                                                réseau et des IPs valide cet AC, ainsi que la prise en main d'EVE-NG.
+                                            </p>
+                                        </div>
+                                        <div class="competence-item">
+                                            <span class="competence-badge">AC11.05</span>
+                                            <p>Tout au long de la réalisation, en corrigeant nos erreurs après les avoir
+                                                cherchées et en faisant des plans et tableaux de nos adresses.</p>
+                                        </div>
+                                        <div class="competence-item">
+                                            <span class="competence-badge">AC11.06</span>
+                                            <p>En créant le réseau, en configurant le poste Linux et en faisant la
+                                                démonstration à notre professeur.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SAÉ 2.01 -->
+                        <div id="sae201" class="project-card project-card-expanded">
+                            <div class="project-card-content">
+                                <div class="project-card-header">
+                                    <h4 class="project-card-title">Construire un réseau informatique pour une petite
+                                        structure</h4>
+                                    <span class="project-card-code">SAÉ 2.01</span>
+                                </div>
+
+                                <div class="project-section">
+                                    <h5>📋 Contexte</h5>
+                                    <p>Ce projet à réaliser seul avait pour objectif de consolider notre savoir-faire
+                                        sur du matériel réseau. Nous devions construire un <strong>réseau local</strong>
+                                        constitué de routeurs et de commutateurs avec des règles de sécurité.</p>
+                                    <p>Pour la sécurité, le réseau comportait différents <strong>VLANs</strong> :
+                                        Administration, développeur et administrateur. Nous devions découper le réseau
+                                        pour le partager à ces VLANs, faire en sorte que tout communique puis y ajouter
+                                        les règles.</p>
+                                    <p>Il fallait également déployer des services sur des serveurs et relier notre
+                                        simulation à celles d'autres élèves.</p>
+                                </div>
+
+                                <div class="project-section">
+                                    <h5>🔧 Simulation sur GNS3</h5>
+                                    <div class="project-content-split">
+                                        <div class="project-text">
+                                            <p>Nous devions réaliser la simulation du réseau sur le logiciel
+                                                <strong>GNS3</strong>, installé sur des machines Linux Debian de l'IUT.
+                                            </p>
+                                            <p>Une fois les équipements mis en place, nous avons configuré les adresses
+                                                IPs, les interfaces des switch et les VLANs. Il y avait <strong>trois
+                                                    liens</strong> entre ces derniers pour optimiser le trafic et
+                                                permettre une redondance en cas de panne.</p>
+                                            <p>Les routeurs partageaient leur table de routage et le Switch2 était de
+                                                <strong>niveau 3</strong>. Nous devions mettre en place un
+                                                <strong>serveur web</strong> et un <strong>serveur FTP</strong>. Des
+                                                <strong>ACLs</strong> étaient aussi à configurer pour l'interconnexion
+                                                avec d'autres réseaux.</p>
+                                            <p>Cette simulation était bien plus complexe que celle réalisée sous EVE-NG
+                                                au premier semestre à cause des services et des configurations
+                                                multiples. Je n'ai pas réussi à faire l'interconnexion pendant le projet
+                                                mais j'ai compris plus tard qu'il fallait utiliser le protocole
+                                                <strong>NAT</strong>.</p>
+                                        </div>
+                                        <div class="project-image">
+                                            <img src="images/sae201-gns3.png" alt="Schéma réseau GNS3"
+                                                class="zoomable-image">
+                                        </div>
+                                    </div>
+                                    <div class="project-resources">
+                                        <a href="fichiers/SAE-201-Commandes.txt" class="resource-link"
+                                            target="_blank">📄 Fichier de commandes</a>
+                                    </div>
+                                </div>
+
+                                <div class="project-section">
+                                    <h5>✅ Compétences validées</h5>
+                                    <div class="competences-list">
+                                        <div class="competence-item">
+                                            <span class="competence-badge">AC11.02</span>
+                                            <p>Le projet a participé à la compréhension de l'architecture et des
+                                                fondements des systèmes numériques.</p>
+                                        </div>
+                                        <div class="competence-item">
+                                            <span class="competence-badge">AC11.03</span>
+                                            <p>Validé en configurant : les IPs, les VLANs, le serveur Web Linux, le
+                                                routage et le NAT.</p>
+                                        </div>
+                                        <div class="competence-item">
+                                            <span class="competence-badge">AC11.04</span>
+                                            <p>En utilisant GNS3 sous Debian, en important les images des routeurs et
+                                                PCs et en exportant mes configurations.</p>
+                                        </div>
+                                        <div class="competence-item">
+                                            <span class="competence-badge">AC11.05</span>
+                                            <p>Principalement durant la configuration des routeurs et switch pour
+                                                identifier et corriger les dysfonctionnements.</p>
+                                        </div>
+                                        <div class="competence-item">
+                                            <span class="competence-badge">AC11.06</span>
+                                            <p>Avec l'importation des images et la configuration des PCs et des serveurs
+                                                Linux.</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

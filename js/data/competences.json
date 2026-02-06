@@ -11,78 +11,96 @@
                 "but1": [
                     {
                         "code": "AC11.01",
+                        "shortName": "Lois de l'électricité",
                         "description": "Maîtriser les lois fondamentales de l'électricité afin d'intervenir sur des équipements de réseaux et télécommunications"
                     },
                     {
                         "code": "AC11.02",
+                        "shortName": "Architecture & codage",
                         "description": "Comprendre l'architecture et les fondements des systèmes numériques, les principes du codage de l'information, des communications et de l'Internet"
                     },
                     {
                         "code": "AC11.03",
+                        "shortName": "Config réseau local",
                         "description": "Configurer les fonctions de base du réseau local"
                     },
                     {
                         "code": "AC11.04",
+                        "shortName": "Systèmes d'exploitation",
                         "description": "Maîtriser les rôles et les principes fondamentaux des systèmes d'exploitation afin d'interagir avec ceux-ci pour la configuration et l'administration des réseaux et services fournis"
                     },
                     {
                         "code": "AC11.05",
+                        "shortName": "Dysfonctionnements réseau",
                         "description": "Identifier les dysfonctionnements du réseau local et savoir les signaler"
                     },
                     {
                         "code": "AC11.06",
+                        "shortName": "Installation poste client",
                         "description": "Installer un poste client, expliquer la procédure mise en place"
                     }
                 ],
                 "but2": [
                     {
                         "code": "AC21.01",
+                        "shortName": "Routage dynamique",
                         "description": "Configurer et dépanner le routage dynamique dans un réseau"
                     },
                     {
                         "code": "AC21.02",
+                        "shortName": "QoS & sécurité réseau",
                         "description": "Configurer et expliquer une politique simple de QoS et les fonctions de base de la sécurité d'un réseau"
                     },
                     {
                         "code": "AC21.03",
+                        "shortName": "Virtualisation",
                         "description": "Déployer des postes clients et des solutions virtualisées adaptées à une situation donnée"
                     },
                     {
                         "code": "AC21.04",
+                        "shortName": "Services avancés",
                         "description": "Déployer des services réseaux avancés"
                     },
                     {
                         "code": "AC21.05",
+                        "shortName": "Réseaux opérateurs",
                         "description": "Identifier les réseaux opérateurs et l'architecture d'Internet"
                     },
                     {
                         "code": "AC21.06",
+                        "shortName": "Travail en équipe",
                         "description": "Travailler en équipe pour développer ses compétences professionnelles"
                     }
                 ],
                 "but3": [
                     {
                         "code": "AC31.01",
+                        "shortName": "Conception projet réseau",
                         "description": "Concevoir un projet de réseau informatique d'une entreprise en intégrant les problématiques de haute disponibilité, de QoS, de sécurité et de supervision"
                     },
                     {
                         "code": "AC31.02",
+                        "shortName": "Documentation technique",
                         "description": "Réaliser la documentation technique de ce projet"
                     },
                     {
                         "code": "AC31.03",
+                        "shortName": "Maquette démo",
                         "description": "Réaliser une maquette de démonstration du projet"
                     },
                     {
                         "code": "AC31.04",
+                        "shortName": "Défendre un projet",
                         "description": "Défendre/argumenter un projet"
                     },
                     {
                         "code": "AC31.05",
+                        "shortName": "Communication",
                         "description": "Communiquer avec les acteurs du projet"
                     },
                     {
                         "code": "AC31.06",
+                        "shortName": "Gestion de projet",
                         "description": "Gérer le projet et les différentes étapes de sa mise en œuvre en respectant les délais"
                     }
                 ]
@@ -99,66 +117,81 @@
                 "but1": [
                     {
                         "code": "AC12.01",
+                        "shortName": "Analyse signaux",
                         "description": "Mesurer, analyser et commenter les signaux"
                     },
                     {
                         "code": "AC12.02",
+                        "shortName": "Systèmes de transmission",
                         "description": "Caractériser des systèmes de transmissions élémentaires et découvrir la modélisation mathématique de leur fonctionnement"
                     },
                     {
                         "code": "AC12.03",
+                        "shortName": "Supports de transmission",
                         "description": "Déployer des supports de transmission"
                     },
                     {
                         "code": "AC12.04",
+                        "shortName": "ToIP",
                         "description": "Connecter les systèmes de ToIP"
                     },
                     {
                         "code": "AC12.05",
+                        "shortName": "Communication client",
                         "description": "Communiquer avec un tiers (client, collaborateur...) et adapter son discours et sa langue à son interlocuteur"
                     }
                 ],
                 "but2": [
                     {
                         "code": "AC22.01",
+                        "shortName": "Transmissions complexes",
                         "description": "Déployer et caractériser des systèmes de transmissions complexes"
                     },
                     {
                         "code": "AC22.02",
+                        "shortName": "Accès distant sécurisé",
                         "description": "Mettre en place un accès distant sécurisé"
                     },
                     {
                         "code": "AC22.03",
+                        "shortName": "Connexion multi-site",
                         "description": "Mettre en place une connexion multi-site via un réseau opérateur"
                     },
                     {
                         "code": "AC22.04",
+                        "shortName": "Réseaux d'accès",
                         "description": "Déployer des réseaux d'accès des opérateurs"
                     },
                     {
                         "code": "AC22.05",
+                        "shortName": "Cahier des charges",
                         "description": "Capacité à questionner un cahier des charges RT"
                     }
                 ],
                 "but3": [
                     {
                         "code": "AC32.01",
+                        "shortName": "Comm. entreprise",
                         "description": "Déployer un système de communication pour l'entreprise"
                     },
                     {
                         "code": "AC32.02",
+                        "shortName": "WiFi sécurisé",
                         "description": "Déployer un réseau d'accès sans fil pour le réseau d'entreprise en intégrant les enjeux de la sécurité"
                     },
                     {
                         "code": "AC32.03",
+                        "shortName": "Accès fixe/mobile",
                         "description": "Déployer un réseau d'accès fixe ou mobile pour un opérateur de télécommunications en intégrant la sécurité"
                     },
                     {
                         "code": "AC32.04",
+                        "shortName": "Connexion SI sécurisée",
                         "description": "Permettre aux collaborateurs de se connecter de manière sécurisée au système d'information de l'entreprise"
                     },
                     {
                         "code": "AC32.05",
+                        "shortName": "Projet FR/EN",
                         "description": "Collaborer en mode projet en français et en anglais"
                     }
                 ]
@@ -175,74 +208,91 @@
                 "but1": [
                     {
                         "code": "AC13.01",
+                        "shortName": "Outils système",
                         "description": "Utiliser un système informatique et ses outils"
                     },
                     {
                         "code": "AC13.02",
+                        "shortName": "Modifier programme",
                         "description": "Lire, exécuter, corriger et modifier un programme"
                     },
                     {
                         "code": "AC13.03",
+                        "shortName": "Algorithme → Code",
                         "description": "Traduire un algorithme, dans un langage et pour un environnement donné"
                     },
                     {
                         "code": "AC13.04",
+                        "shortName": "Archi site Web",
                         "description": "Connaître l'architecture et les technologies d'un site Web"
                     },
                     {
                         "code": "AC13.05",
+                        "shortName": "Gestion données",
                         "description": "Choisir les mécanismes de gestion de données adaptés au développement de l'outil et argumenter ses choix"
                     },
                     {
                         "code": "AC13.06",
+                        "shortName": "Travail collaboratif",
                         "description": "S'intégrer dans un environnement propice au développement et au travail collaboratif"
                     }
                 ],
                 "but2": [
                     {
                         "code": "AC23.01",
+                        "shortName": "Scripts admin",
                         "description": "Automatiser l'administration système avec des scripts"
                     },
                     {
                         "code": "AC23.02",
+                        "shortName": "App Web/Mobile",
                         "description": "Développer une application à partir d'un cahier des charges donné, pour le Web ou les périphériques mobiles"
                     },
                     {
                         "code": "AC23.03",
+                        "shortName": "Client/Serveur",
                         "description": "Utiliser un protocole réseau pour programmer une application client/serveur"
                     },
                     {
                         "code": "AC23.04",
+                        "shortName": "SGBD",
                         "description": "Installer, administrer un système de gestion de données"
                     },
                     {
                         "code": "AC23.05",
+                        "shortName": "Accès données",
                         "description": "Accéder à un ensemble de données depuis une application et/ou un site web"
                     }
                 ],
                 "but3": [
                     {
                         "code": "AC33.01",
+                        "shortName": "Cahier des charges",
                         "description": "Élaborer les spécifications techniques et le cahier des charges d'une application informatique"
                     },
                     {
                         "code": "AC33.02",
+                        "shortName": "Environnement collab",
                         "description": "Mettre en place un environnement de travail collaboratif"
                     },
                     {
                         "code": "AC33.03",
+                        "shortName": "Formation utilisateurs",
                         "description": "Participer à la formation des utilisateurs"
                     },
                     {
                         "code": "AC33.04",
+                        "shortName": "Déploiement solution",
                         "description": "Déployer et maintenir une solution informatique"
                     },
                     {
                         "code": "AC33.05",
+                        "shortName": "Veille techno",
                         "description": "S'informer sur les évolutions et les nouveautés technologiques"
                     },
                     {
                         "code": "AC33.06",
+                        "shortName": "Sécurisation app",
                         "description": "Sécuriser l'environnement numérique d'une application"
                     }
                 ]
@@ -259,44 +309,54 @@
                 "but2": [
                     {
                         "code": "AC24.01Cyber",
+                        "shortName": "Bonnes pratiques cyber",
                         "description": "Connaître et utiliser les bonnes pratiques et les recommandations de cybersécurité"
                     },
                     {
                         "code": "AC24.02Cyber",
+                        "shortName": "Outils sécurisation",
                         "description": "Mettre en œuvre les outils fondamentaux de sécurisation d'une infrastructure du réseau"
                     },
                     {
                         "code": "AC24.03Cyber",
+                        "shortName": "Sécuriser services",
                         "description": "Sécuriser les services"
                     },
                     {
                         "code": "AC24.04Cyber",
+                        "shortName": "Cryptographie",
                         "description": "Choisir les outils cryptographiques adaptés au besoin fonctionnel du système d'information"
                     },
                     {
                         "code": "AC24.05Cyber",
+                        "shortName": "Types d'attaque",
                         "description": "Connaître les différents types d'attaque"
                     },
                     {
                         "code": "AC24.06Cyber",
+                        "shortName": "Docs techniques EN",
                         "description": "Comprendre des documents techniques en anglais"
                     }
                 ],
                 "but3": [
                     {
                         "code": "AC34.01Cyber",
+                        "shortName": "Analyse de risque",
                         "description": "Participer activement à une analyse de risque pour définir une politique de sécurité pour une petite structure"
                     },
                     {
                         "code": "AC34.02Cyber",
+                        "shortName": "Outils avancés sécu",
                         "description": "Mettre en œuvre des outils avancés de sécurisation d'une infrastructure du réseau"
                     },
                     {
                         "code": "AC34.03Cyber",
+                        "shortName": "Sécuriser OS",
                         "description": "Sécuriser les systèmes d'exploitation"
                     },
                     {
                         "code": "AC34.04Cyber",
+                        "shortName": "Architecture SI sécu",
                         "description": "Proposer une architecture sécurisée de système d'information pour une petite structure"
                     }
                 ]
@@ -313,32 +373,39 @@
                 "but2": [
                     {
                         "code": "AC25.01Cyber",
+                        "shortName": "Anti-malwares",
                         "description": "Administrer les protections contre les logiciels malveillants"
                     },
                     {
                         "code": "AC25.02Cyber",
+                        "shortName": "Outils pentest",
                         "description": "Prendre en main des outils de test de pénétration réseau/système"
                     }
                 ],
                 "but3": [
                     {
                         "code": "AC35.01Cyber",
+                        "shortName": "Surveillance SI",
                         "description": "Surveiller l'activité du système d'information"
                     },
                     {
                         "code": "AC35.02Cyber",
+                        "shortName": "Méthodologie pentest",
                         "description": "Appliquer une méthodologie de tests de pénétration"
                     },
                     {
                         "code": "AC35.03Cyber",
+                        "shortName": "Réponse incident",
                         "description": "Réagir face à un incident de sécurité"
                     },
                     {
                         "code": "AC35.04Cyber",
+                        "shortName": "Admin surveillance",
                         "description": "Administrer les outils de surveillance du système d'information"
                     }
                 ]
             }
         }
-    ]
+    ],
+    "saes": []
 }
