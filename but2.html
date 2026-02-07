@@ -52,15 +52,50 @@
                         </div>
                     </div>
                     <div class="projects-grid">
-                        <div class="project-card">
+                        <!-- Mission Administrer -->
+                        <article id="mission-admin" class="project-card project-card-expanded">
                             <div class="project-card-content">
                                 <div class="project-card-header">
-                                    <h4 class="project-card-title">[En attente de contenu]</h4>
-                                    <span class="project-card-code">Alternance</span>
+                                    <h4 class="project-card-title">Gestion des postes utilisateurs</h4>
+                                    <span class="project-card-code">Compétence Administrer</span>
                                 </div>
-                                <p class="project-card-description"><em>Contenu à fournir par l'utilisateur</em></p>
+
+                                <div class="project-section">
+                                    <h5>🏢 Tâches en entreprise</h5>
+                                    <p>Durant mon alternance, je dois gérer les postes des membres de l'entreprise, cela
+                                        comporte les ordinateurs mais également leurs téléphones et autres outils de
+                                        communication. Ils doivent bien sûr avoir accès au réseau de façon stable et
+                                        sécurisée.</p>
+                                    <p>Je regarde également la création et la gestion des lignes internet et
+                                        l'attribution des extensions ou des redirections téléphoniques sur l'IPBX de
+                                        l'entreprise.</p>
+                                </div>
+
+                                <div class="project-section competences-collapsible">
+                                    <div class="competences-header"
+                                        onclick="this.parentElement.classList.toggle('open')">
+                                        <h5>Situations professionnelles validées</h5>
+                                        <span class="competences-toggle">▼</span>
+                                    </div>
+                                    <div class="competences-content">
+                                        <div class="competences-list">
+                                            <div class="competence-item">
+                                                <p>Conception et administration de l'infrastructure du réseau
+                                                    informatique d'une entreprise</p>
+                                            </div>
+                                            <div class="competence-item">
+                                                <p>Installation et administration des services réseau informatique d'une
+                                                    entreprise</p>
+                                            </div>
+                                            <div class="competence-item">
+                                                <p>Déploiement et administration des solutions fixes pour les clients
+                                                    d'un opérateur de télécommunication</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                        </article>
                     </div>
                 </div>
 
@@ -74,15 +109,102 @@
                         </div>
                     </div>
                     <div class="projects-grid">
-                        <div class="project-card">
+                        <!-- SAÉ 3.03 -->
+                        <article id="sae303" class="project-card project-card-expanded">
                             <div class="project-card-content">
                                 <div class="project-card-header">
-                                    <h4 class="project-card-title">[En attente de contenu]</h4>
-                                    <span class="project-card-code">SAÉ 3.0x</span>
+                                    <h4 class="project-card-title">Concevoir un réseau multisites</h4>
+                                    <span class="project-card-code">SAÉ 3.03</span>
                                 </div>
-                                <p class="project-card-description"><em>Contenu à fournir par l'utilisateur</em></p>
+
+                                <div class="project-section">
+                                    <h5>📋 Contexte</h5>
+                                    <p>Le but de cette SAE était de réaliser un réseau virtuel complet avec une partie
+                                        LAN et ses services, reliable à une partie WAN simulant les opérateurs et la
+                                        connexion à un autre site. Le projet était à faire par groupe de 3 étudiants qui
+                                        devaient se répartir chacun une partie des tâches : une personne le LAN, une
+                                        personne les services et une le réseau externe (partie opérateur).</p>
+                                </div>
+
+                                <div class="project-section">
+                                    <h5>🔧 Ce que j'ai fait</h5>
+                                    <p>J'étais la personne chargée de la <strong>partie LAN</strong> du réseau, le
+                                        réseau local de l'entreprise. J'ai premièrement dû concevoir la maquette du
+                                        réseau en réfléchissant à sa structure et aux différents appareils présents afin
+                                        de garantir : la disponibilité, l'évolutivité, la hiérarchisation ainsi que la
+                                        segmentation du réseau.</p>
+                                    <p>Il fallait donc aussi réfléchir à la structure et l'adressage du réseau, celui-ci
+                                        partait de l'adresse imaginaire de l'entreprise : <code>10.242.x.0</code>. J'ai
+                                        donc créé différents VLANs afin de sécuriser et segmenter les différentes zones
+                                        et les secteurs de l'entreprise.</p>
+                                    <p>Afin de respecter toutes les consignes précédentes, il fallait configurer des
+                                        switchs et des routeurs Cisco en utilisant différents protocoles réseau,
+                                        notamment : <strong>Spanning Tree</strong>, <strong>DHCP</strong>,
+                                        <strong>OSPF</strong> et le <strong>VRRP</strong>.
+                                    </p>
+                                </div>
+
+                                <div class="project-section competences-collapsible">
+                                    <div class="competences-header"
+                                        onclick="this.parentElement.classList.toggle('open')">
+                                        <h5>Compétences validées</h5>
+                                        <div class="competences-badges">
+                                            <span class="competence-badge">AC21.01</span>
+                                            <span class="competence-badge">AC21.02</span>
+                                            <span class="competence-badge">AC21.03</span>
+                                            <span class="competence-badge">AC21.04</span>
+                                            <span class="competence-badge">AC21.05</span>
+                                            <span class="competence-badge">AC21.06</span>
+                                        </div>
+                                        <span class="competences-toggle">▼</span>
+                                    </div>
+                                    <div class="competences-content">
+                                        <div class="competences-list">
+                                            <div class="competence-item">
+                                                <span class="competence-badge">AC21.01</span>
+                                                <p>Configurer et dépanner le routage dynamique dans un réseau — <em>en
+                                                        mettant en place le routage du réseau avec les protocoles
+                                                        Spanning Tree ainsi que le VRRP</em></p>
+                                            </div>
+                                            <div class="competence-item">
+                                                <span class="competence-badge">AC21.02</span>
+                                                <p>Configurer et expliquer une politique simple de QoS et les fonctions
+                                                    de base de la sécurité d'un réseau — <em>après avoir réalisé le
+                                                        réseau LAN et documenté la solution dans le rapport</em></p>
+                                            </div>
+                                            <div class="competence-item">
+                                                <span class="competence-badge">AC21.03</span>
+                                                <p>Déployer des postes clients et des solutions virtualisées adaptées à
+                                                    une situation donnée — <em>en configurant les protocoles de
+                                                        sécurisation ainsi que d'adressage IP</em></p>
+                                            </div>
+                                            <div class="competence-item">
+                                                <span class="competence-badge">AC21.04</span>
+                                                <p>Déployer des services réseaux avancés — <em>en mettant en place DHCP,
+                                                        OSPF et VRRP</em></p>
+                                            </div>
+                                            <div class="competence-item">
+                                                <span class="competence-badge">AC21.05</span>
+                                                <p>Identifier les réseaux opérateurs et l'architecture d'Internet —
+                                                    <em>en travaillant avec les personnes ayant configuré la partie
+                                                        opérateur</em>
+                                                </p>
+                                            </div>
+                                            <div class="competence-item">
+                                                <span class="competence-badge">AC21.06</span>
+                                                <p>Travailler en équipe pour développer ses compétences professionnelles
+                                                    — <em>collaboration avec les deux autres membres du groupe</em></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="project-resources">
+                                    <a href="fichiers/260427-FRITSCHY-Mathéo_Rapport-LAN.pdf" class="resource-link"
+                                        target="_blank">📄 Rapport LAN (PDF)</a>
+                                </div>
                             </div>
-                        </div>
+                        </article>
                     </div>
                 </div>
 

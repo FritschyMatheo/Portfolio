@@ -21,7 +21,7 @@
                     },
                     {
                         "code": "AC11.03",
-                        "shortName": "Config réseau local",
+                        "shortName": "Configurer le réseau local",
                         "description": "Configurer les fonctions de base du réseau local"
                     },
                     {
@@ -104,6 +104,18 @@
                         "description": "Gérer le projet et les différentes étapes de sa mise en œuvre en respectant les délais"
                     }
                 ]
+            },
+            "situations": {
+                "but2": [
+                    "Conception et administration de l'infrastructure du réseau informatique d'une entreprise",
+                    "Installation et administration des services réseau informatique d'une entreprise",
+                    "Déploiement et administration des solutions fixes pour les clients d'un opérateur de télécommunication"
+                ],
+                "but3": [
+                    "Conception et administration de l'infrastructure du réseau informatique d'une entreprise",
+                    "Installation et administration des services réseau informatique d'une entreprise",
+                    "Déploiement et administration des solutions fixes pour les clients d'un opérateur de télécommunication"
+                ]
             }
         },
         {
@@ -117,7 +129,7 @@
                 "but1": [
                     {
                         "code": "AC12.01",
-                        "shortName": "Analyse signaux",
+                        "shortName": "Analyser les signaux",
                         "description": "Mesurer, analyser et commenter les signaux"
                     },
                     {
@@ -132,7 +144,7 @@
                     },
                     {
                         "code": "AC12.04",
-                        "shortName": "ToIP",
+                        "shortName": "Connecter les systèmes de ToIP",
                         "description": "Connecter les systèmes de ToIP"
                     },
                     {
@@ -171,7 +183,7 @@
                 "but3": [
                     {
                         "code": "AC32.01",
-                        "shortName": "Comm. entreprise",
+                        "shortName": "Communication entreprise",
                         "description": "Déployer un système de communication pour l'entreprise"
                     },
                     {
@@ -191,7 +203,7 @@
                     },
                     {
                         "code": "AC32.05",
-                        "shortName": "Projet FR/EN",
+                        "shortName": "Collaborer en projet FR/EN",
                         "description": "Collaborer en mode projet en français et en anglais"
                     }
                 ]
@@ -223,7 +235,7 @@
                     },
                     {
                         "code": "AC13.04",
-                        "shortName": "Archi site Web",
+                        "shortName": "Architecture site Web",
                         "description": "Connaître l'architecture et les technologies d'un site Web"
                     },
                     {
@@ -240,12 +252,12 @@
                 "but2": [
                     {
                         "code": "AC23.01",
-                        "shortName": "Scripts admin",
+                        "shortName": "Scripts administration",
                         "description": "Automatiser l'administration système avec des scripts"
                     },
                     {
                         "code": "AC23.02",
-                        "shortName": "App Web/Mobile",
+                        "shortName": "Application Web/Mobile",
                         "description": "Développer une application à partir d'un cahier des charges donné, pour le Web ou les périphériques mobiles"
                     },
                     {
@@ -272,7 +284,7 @@
                     },
                     {
                         "code": "AC33.02",
-                        "shortName": "Environnement collab",
+                        "shortName": "Environnement collaboratif",
                         "description": "Mettre en place un environnement de travail collaboratif"
                     },
                     {
@@ -287,12 +299,12 @@
                     },
                     {
                         "code": "AC33.05",
-                        "shortName": "Veille techno",
+                        "shortName": "Veille technologique",
                         "description": "S'informer sur les évolutions et les nouveautés technologiques"
                     },
                     {
                         "code": "AC33.06",
-                        "shortName": "Sécurisation app",
+                        "shortName": "Sécurisation application",
                         "description": "Sécuriser l'environnement numérique d'une application"
                     }
                 ]
@@ -319,7 +331,7 @@
                     },
                     {
                         "code": "AC24.03Cyber",
-                        "shortName": "Sécuriser services",
+                        "shortName": "Sécuriser les services",
                         "description": "Sécuriser les services"
                     },
                     {
@@ -334,7 +346,7 @@
                     },
                     {
                         "code": "AC24.06Cyber",
-                        "shortName": "Docs techniques EN",
+                        "shortName": "Documentation technique EN",
                         "description": "Comprendre des documents techniques en anglais"
                     }
                 ],
@@ -346,17 +358,17 @@
                     },
                     {
                         "code": "AC34.02Cyber",
-                        "shortName": "Outils avancés sécu",
+                        "shortName": "Outils avancés de sécurité",
                         "description": "Mettre en œuvre des outils avancés de sécurisation d'une infrastructure du réseau"
                     },
                     {
                         "code": "AC34.03Cyber",
-                        "shortName": "Sécuriser OS",
+                        "shortName": "Sécuriser les OS",
                         "description": "Sécuriser les systèmes d'exploitation"
                     },
                     {
                         "code": "AC34.04Cyber",
-                        "shortName": "Architecture SI sécu",
+                        "shortName": "Architecture SI sécurisée",
                         "description": "Proposer une architecture sécurisée de système d'information pour une petite structure"
                     }
                 ]
@@ -378,7 +390,7 @@
                     },
                     {
                         "code": "AC25.02Cyber",
-                        "shortName": "Outils pentest",
+                        "shortName": "Outils de pentest",
                         "description": "Prendre en main des outils de test de pénétration réseau/système"
                     }
                 ],
@@ -395,12 +407,12 @@
                     },
                     {
                         "code": "AC35.03Cyber",
-                        "shortName": "Réponse incident",
+                        "shortName": "Réponse à incident",
                         "description": "Réagir face à un incident de sécurité"
                     },
                     {
                         "code": "AC35.04Cyber",
-                        "shortName": "Admin surveillance",
+                        "shortName": "Administration et surveillance",
                         "description": "Administrer les outils de surveillance du système d'information"
                     }
                 ]
