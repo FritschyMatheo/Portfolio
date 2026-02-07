@@ -42,13 +42,13 @@
                     <p>Projets et SAÉs réalisés en première année de BUT R&T</p>
                 </div>
 
-                <!-- COMPÉTENCE 1 : ADMINISTRER -->
-                <div id="ac11" class="competence-group">
+                <!-- SAÉs ET PROJETS -->
+                <div id="saes" class="competence-group">
                     <div class="competence-header">
-                        <div class="competence-icon administrer">🖧</div>
+                        <div class="competence-icon programmer">📚</div>
                         <div class="competence-title">
-                            <h3>Administrer — Réseaux & Internet</h3>
-                            <p>AC11.01 à AC11.03</p>
+                            <h3>SAÉs et Projets</h3>
+                            <p>Situations d'Apprentissage et d'Évaluation réalisées en BUT 1</p>
                         </div>
                     </div>
                     <div class="projects-grid">
@@ -227,6 +227,306 @@
                             </div>
                         </div>
 
+                        <!-- SAÉ 1.03 -->
+                        <div id="sae103" class="project-card project-card-expanded">
+                            <div class="project-card-content">
+                                <div class="project-card-header">
+                                    <h4 class="project-card-title">Découvrir un dispositif de transmission</h4>
+                                    <span class="project-card-code">SAÉ 1.03</span>
+                                </div>
+
+                                <div class="project-section">
+                                    <h5>📋 Contexte</h5>
+                                    <p>La SAE1.03 est la plus grosse SAE que nous avons eu au premier semestre. Nous
+                                        étions par groupe de quatre et chacun avait de quoi faire. Le but était de
+                                        connecter un point d'accès wifi d'une salle à une autre en confectionnant le
+                                        câble et en analysant les puissances des dispositifs au niveau électrique et
+                                        émission wifi.</p>
+                                </div>
+
+                                <div class="project-section">
+                                    <h5>🔌 Réalisation du câble</h5>
+                                    <p>L'objectif de cette SAE était de réaliser la couverture wifi des salles C100,
+                                        C101 et C102. Pour cela il nous fallait mettre en place un point d'accès (AP)
+                                        que nous avons placé en C100, ce dernier étant connecté à un contrôleur
+                                        <strong>Cisco WLC 5500</strong> en C102.
+                                    </p>
+                                    <p>En premier lieu, nous avons réalisé nous-même le câble qui connecte l'AP dans la
+                                        baie de brassage ainsi qu'un port RJ45 femelle dans la salle C100 et C102. Nous
+                                        avons utilisé des câbles de norme <strong>S/FTP catégorie 7</strong> ISO/IEC.
+                                        Pour le branchement des paires de fils, nous avons utilisé la norme
+                                        <strong>T568B</strong> pour les connecteurs mâles et femelles.
+                                    </p>
+                                </div>
+
+                                <div class="project-section">
+                                    <h5>📊 Mesures du réseau</h5>
+                                    <div class="project-content-split">
+                                        <div class="project-text">
+                                            <p>Nous avons réalisé différentes mesures avec l'application <strong>Wifi
+                                                    Analyzer</strong> sur smartphone et le logiciel <strong>Acrylic Wifi
+                                                    Analyzer</strong> sur nos ordinateurs portables.</p>
+                                            <p>L'information que l'on cherchait était le <strong>RSSI</strong> (Received
+                                                Signal Strength Indicator) qui représente la puissance de notre signal.
+                                                Son unité est le <strong>dBm</strong> qui représente la puissance
+                                                supérieure ou inférieure à 1 mW.</p>
+                                            <p>Les mesures en 2,4 GHz montrent que plus nous nous éloignons, plus nous
+                                                perdons le signal. Il devient faible à environ 30 mètres puis continue
+                                                de diminuer.</p>
+                                        </div>
+                                        <div class="project-image">
+                                            <img src="images/sae103-mesures.png" alt="Mesures du signal WiFi"
+                                                class="zoomable-image">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="project-section">
+                                    <h5>🖥️ Simulation réseau</h5>
+                                    <div class="project-content-split">
+                                        <div class="project-text">
+                                            <p>Dans <strong>Cisco Packet Tracer</strong>, nous avons utilisé le LAP-PT
+                                                pour représenter le point d'accès. Le contrôleur chargé de gérer sa
+                                                configuration est un <strong>WLC 5500</strong>.</p>
+                                            <p>La configuration est effectuée par un ordinateur relié au contrôleur via
+                                                un switch en salle C102. Les deux serveurs s'occupent du
+                                                <strong>DNS</strong> ainsi que du service web "uha.fr".
+                                            </p>
+                                            <p>Le routeur <strong>Cisco 2811</strong> sert à faire le lien entre notre
+                                                réseau en 10.129.10.0/24 et l'extérieur.</p>
+                                        </div>
+                                        <div class="project-image">
+                                            <img src="images/sae103-cisco.png" alt="Schéma réseau Cisco Packet Tracer"
+                                                class="zoomable-image">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="project-section competences-collapsible">
+                                    <div class="competences-header"
+                                        onclick="this.parentElement.classList.toggle('open')">
+                                        <h5>Compétences validées</h5>
+                                        <div class="competences-badges">
+                                            <span class="competence-badge">AC12.01</span>
+                                            <span class="competence-badge">AC12.03</span>
+                                            <span class="competence-badge">AC12.05</span>
+                                        </div>
+                                        <span class="competences-toggle">▼</span>
+                                    </div>
+                                    <div class="competences-content">
+                                        <div class="competences-list">
+                                            <div class="competence-item">
+                                                <span class="competence-badge">AC12.01</span>
+                                                <p>Avec la mesure des signaux via Acrylic, l'application Android et les
+                                                    mesures PoE nous avons largement validé <em>Mesurer, analyser et
+                                                        commenter les signaux</em>.</p>
+                                            </div>
+                                            <div class="competence-item">
+                                                <span class="competence-badge">AC12.03</span>
+                                                <p><em>Déployer des supports de transmission</em> fait écho à la SAE
+                                                    dans son intégralité. Nous avons justement réussi à déployer un
+                                                    support qui était notre borne wifi.</p>
+                                            </div>
+                                            <div class="competence-item">
+                                                <span class="competence-badge">AC12.05</span>
+                                                <p>Lors de la présentation orale, nous avons dû présenter les choses de
+                                                    façon simplifiée et adaptée à tout public. Ce qui valide
+                                                    <em>Communiquer avec un tiers et adapter son discours à son
+                                                        interlocuteur</em>.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SAÉ 1.04 -->
+                        <div id="sae104" class="project-card project-card-expanded">
+                            <div class="project-card-content">
+                                <div class="project-card-header">
+                                    <h4 class="project-card-title">Se présenter sur internet</h4>
+                                    <span class="project-card-code">SAÉ 1.04</span>
+                                </div>
+
+                                <div class="project-section">
+                                    <h5>📋 Contexte</h5>
+                                    <p>Cette SAE avait pour but de nous sensibiliser à notre identité numérique, puis à
+                                        nous en créer une professionnelle positive via la création d'une page web. Elle
+                                        était à réaliser seul.</p>
+                                    <p>Nous devions chercher toutes les traces qui existent de nous sur internet, juger
+                                        si elles étaient positives ou négatives, et essayer de les modifier si
+                                        nécessaire. Ensuite, nous devions créer une page web décrivant notre parcours
+                                        professionnel ainsi qu'un centre d'intérêt.</p>
+                                </div>
+
+                                <div class="project-section">
+                                    <h5>💭 Réflexion e-réputation</h5>
+                                    <p>J'ai rédigé un document de réflexion sur ma e-réputation, analysant les traces
+                                        existantes et les actions à mener pour créer une image professionnelle positive.
+                                    </p>
+                                </div>
+
+                                <div class="project-section">
+                                    <h5>💻 Programmation web</h5>
+                                    <div class="project-content-split">
+                                        <div class="project-text">
+                                            <p>En cours, nous avions appris à créer de simples pages web avec de la mise
+                                                en page d'articles et quelques notions de design basique.</p>
+                                            <p>J'ai pu mettre tout cela en œuvre pour créer plusieurs pages reliées
+                                                entre elles. J'ai également appris pas mal de choses au niveau du
+                                                design.</p>
+                                            <p>Les langages utilisés étaient le <strong>HTML</strong> ainsi que le
+                                                <strong>CSS</strong>.
+                                            </p>
+                                        </div>
+                                        <div class="project-image">
+                                            <img src="images/228994-sitematheo.png" alt="Site web personnel"
+                                                class="zoomable-image">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="project-section competences-collapsible">
+                                    <div class="competences-header"
+                                        onclick="this.parentElement.classList.toggle('open')">
+                                        <h5>Compétences validées</h5>
+                                        <div class="competences-badges">
+                                            <span class="competence-badge">AC13.01</span>
+                                            <span class="competence-badge">AC13.04</span>
+                                        </div>
+                                        <span class="competences-toggle">▼</span>
+                                    </div>
+                                    <div class="competences-content">
+                                        <div class="competences-list">
+                                            <div class="competence-item">
+                                                <span class="competence-badge">AC13.01</span>
+                                                <p><em>Utiliser un système informatique et ses outils</em> — validée
+                                                    grâce à l'utilisation de <strong>Visual Studio Code</strong> ainsi
+                                                    que <strong>GitHub avec git</strong>. VS Code m'a permis de coder le
+                                                    site avec ses extensions. GitHub et git permettent d'héberger le
+                                                    site et de créer des versions des fichiers.</p>
+                                            </div>
+                                            <div class="competence-item">
+                                                <span class="competence-badge">AC13.04</span>
+                                                <p><em>Connaître l'architecture et les technologies d'un site Web</em> —
+                                                    en créant et hébergeant mon propre site. J'ai dû organiser
+                                                    l'ensemble des fichiers pour que le site fonctionne avec une
+                                                    architecture professionnelle.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="project-resources">
+                                    <a href="fichiers/Reflexion_Ereputation_Fritschy.pdf" class="resource-link"
+                                        target="_blank">📄 Réflexion e-réputation (PDF)</a>
+                                    <a href="https://fritschymatheo.github.io/SAE14_Se-presenter-sur-internet/"
+                                        class="resource-link" target="_blank">🌐 Site web hébergé</a>
+                                    <a href="https://github.com/FritschyMatheo/SAE14_Se-presenter-sur-internet"
+                                        class="resource-link" target="_blank">📂 Dossier GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SAÉ 1.05 -->
+                        <div id="sae105" class="project-card project-card-expanded">
+                            <div class="project-card-content">
+                                <div class="project-card-header">
+                                    <h4 class="project-card-title">Traiter des données</h4>
+                                    <span class="project-card-code">SAÉ 1.05</span>
+                                </div>
+
+                                <div class="project-section">
+                                    <h5>📋 Contexte</h5>
+                                    <p>Cette SAE devait nous faire créer un programme d'attaque et d'écoute réseau
+                                        <strong>"Man in the Middle"</strong>. Ce genre d'attaque consiste à se placer
+                                        entre deux appareils en réseau en usurpant leurs adresses IP et MAC ainsi que
+                                        celle du routeur.
+                                    </p>
+                                    <p>On récupère d'abord les adresses MAC des deux cibles, puis on envoie en masse des
+                                        paquets ARP falsifiés (<strong>ARP poisoning</strong>). Une fois la table ARP
+                                        des victimes empoisonnée, leurs messages transitent par nous avant d'être
+                                        relayés vers leur destinataire réel.</p>
+                                    <p>Le projet était réalisé par groupe de deux. Nous avons utilisé la librairie
+                                        <strong>Scapy</strong> de Python qui permet de créer des paquets réseau
+                                        personnalisés.
+                                    </p>
+                                </div>
+
+                                <div class="project-section">
+                                    <h5>💻 Création des codes</h5>
+                                    <p>Il y avait deux codes Python à créer avec <strong>Scapy</strong> :</p>
+                                    <ul>
+                                        <li>Un script d'<strong>observation</strong> du trafic entre les deux hôtes</li>
+                                        <li>Un script permettant d'<strong>envoyer des messages</strong> en se faisant
+                                            passer pour l'autre personne</li>
+                                    </ul>
+                                    <p>À ce moment de l'année, nous n'étions pas encore à l'aise avec Python. J'ai dû
+                                        beaucoup travailler, mais le résultat n'était pas tout à fait conforme aux
+                                        attentes. Cependant, ce projet m'a permis d'apprendre énormément sur le réseau
+                                        et les fonctions Python.</p>
+                                </div>
+
+                                <div class="project-section competences-collapsible">
+                                    <div class="competences-header"
+                                        onclick="this.parentElement.classList.toggle('open')">
+                                        <h5>Compétences validées</h5>
+                                        <div class="competences-badges">
+                                            <span class="competence-badge">AC13.01</span>
+                                            <span class="competence-badge">AC13.02</span>
+                                            <span class="competence-badge">AC13.03</span>
+                                            <span class="competence-badge">AC13.04</span>
+                                            <span class="competence-badge">AC13.05</span>
+                                            <span class="competence-badge">AC13.06</span>
+                                        </div>
+                                        <span class="competences-toggle">▼</span>
+                                    </div>
+                                    <div class="competences-content">
+                                        <div class="competences-list">
+                                            <div class="competence-item">
+                                                <span class="competence-badge">AC13.01</span>
+                                                <p><em>Utiliser un système informatique et ses outils</em> — en
+                                                    travaillant avec la librairie Scapy sous Visual Studio Code.</p>
+                                            </div>
+                                            <div class="competence-item">
+                                                <span class="competence-badge">AC13.02</span>
+                                                <p><em>Lire, exécuter, corriger et modifier un programme</em> — tout au
+                                                    long du projet en travaillant sur les deux scripts Python.</p>
+                                            </div>
+                                            <div class="competence-item">
+                                                <span class="competence-badge">AC13.03</span>
+                                                <p><em>Traduire un algorithme</em> — dès le début du projet, en
+                                                    établissant le plan de ce que l'on devait faire.</p>
+                                            </div>
+                                            <div class="competence-item">
+                                                <span class="competence-badge">AC13.04</span>
+                                                <p><em>Connaître l'architecture et les technologies web</em> — les
+                                                    protocoles ARP et IP utilisés pour l'attaque.</p>
+                                            </div>
+                                            <div class="competence-item">
+                                                <span class="competence-badge">AC13.05</span>
+                                                <p><em>Choisir les mécanismes de gestion de données adaptés</em> — en
+                                                    choisissant Scapy pour manipuler les trames réseau.</p>
+                                            </div>
+                                            <div class="competence-item">
+                                                <span class="competence-badge">AC13.06</span>
+                                                <p><em>S'intégrer dans un environnement collaboratif</em> — travail en
+                                                    binôme en salle informatique de l'IUT.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="project-resources">
+                                    <a href="fichiers/script1.py" class="resource-link" target="_blank">📄 Script 1
+                                        (Python)</a>
+                                    <a href="fichiers/script2.py" class="resource-link" target="_blank">📄 Script 2
+                                        (Python)</a>
+                                </div>
+                            </div>
+                        </div>
+
                         <!-- SAÉ 2.01 -->
                         <div id="sae201" class="project-card project-card-expanded">
                             <div class="project-card-content">
@@ -267,11 +567,9 @@
                                                 avec d'autres réseaux.
                                             </p>
                                             <p>Cette simulation était bien plus complexe que celle réalisée sous EVE-NG
-                                                au premier semestre à cause des services et des configurations
-                                                multiples. Je n'ai pas réussi à faire l'interconnexion pendant le projet
-                                                mais j'ai compris plus tard qu'il fallait utiliser le protocole
-                                                <strong>NAT</strong>.
-                                            </p>
+                                                au premier semestre. Je n'ai pas réussi à faire l'interconnexion pendant
+                                                le projet mais j'ai compris plus tard qu'il fallait utiliser le
+                                                protocole <strong>NAT</strong>.</p>
                                         </div>
                                         <div class="project-image">
                                             <img src="images/sae201-gns3.png" alt="Schéma réseau GNS3"
@@ -329,50 +627,369 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
 
-                <!-- COMPÉTENCE 2 : CONNECTER -->
-                <div id="ac12" class="competence-group">
-                    <div class="competence-header">
-                        <div class="competence-icon connecter">📡</div>
-                        <div class="competence-title">
-                            <h3>Connecter — Transmissions</h3>
-                            <p>AC12.01 à AC12.03</p>
-                        </div>
-                    </div>
-                    <div class="projects-grid">
-                        <!-- PROJETS À AJOUTER ICI -->
-                        <div class="project-card">
+                        <!-- SAÉ 2.03 -->
+                        <div id="sae203" class="project-card project-card-expanded">
                             <div class="project-card-content">
                                 <div class="project-card-header">
-                                    <h4 class="project-card-title">[En attente de contenu]</h4>
-                                    <span class="project-card-code">SAÉ 1.0x</span>
+                                    <h4 class="project-card-title">Mettre en place une solution informatique pour
+                                        l'entreprise</h4>
+                                    <span class="project-card-code">SAÉ 2.03</span>
                                 </div>
-                                <p class="project-card-description"><em>Contenu à fournir par l'utilisateur</em></p>
+
+                                <div class="project-section">
+                                    <h5>📋 Contexte</h5>
+                                    <p>Cette SAE avait pour but de concevoir et déployer une <strong>application
+                                            web</strong> permettant l'accès à un ensemble de données. L'application
+                                        devait prendre en charge des données sous forme de fichiers ou base de données,
+                                        avec possibilité d'insertion et manipulation.</p>
+                                    <p>Le projet était normalement réalisé par groupe de trois, mais notre groupe n'en
+                                        comportait que deux.</p>
+                                </div>
+
+                                <div class="project-section">
+                                    <h5>💻 Conception de l'application</h5>
+                                    <div class="project-content-split">
+                                        <div class="project-text">
+                                            <p>Nous avons créé l'application en <strong>Python avec Django</strong>.
+                                                Django est un framework qui facilite la création d'applications web. Ce
+                                                projet nous a permis d'approfondir nos connaissances avec cet outil.</p>
+                                            <p>La base de données était hébergée sur une machine virtuelle
+                                                <strong>Windows 10 avec MySQL</strong>. Nous avons dû faire des
+                                                recherches pour que la machine contenant le code puisse se lier à la
+                                                base de données.
+                                            </p>
+                                        </div>
+                                        <div class="project-image">
+                                            <img src="images/227856-ImageApp.png" alt="Application Django"
+                                                class="zoomable-image">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="project-section">
+                                    <h5>🤝 Travail collaboratif</h5>
+                                    <p>Le projet nécessitait une bonne organisation. Nous avons utilisé un
+                                        <strong>diagramme de Gantt</strong> sous Google Slides pour planifier les tâches
+                                        et suivre nos progrès.
+                                    </p>
+                                    <p>Le code est disponible sur <strong>GitHub</strong>, permettant le travail en
+                                        parallèle via des commits. En cas de conflit, VS Code offre une résolution
+                                        intégrée.</p>
+                                </div>
+
+                                <div class="project-section competences-collapsible">
+                                    <div class="competences-header"
+                                        onclick="this.parentElement.classList.toggle('open')">
+                                        <h5>Compétences validées</h5>
+                                        <div class="competences-badges">
+                                            <span class="competence-badge">AC13.01</span>
+                                            <span class="competence-badge">AC13.02</span>
+                                            <span class="competence-badge">AC13.03</span>
+                                            <span class="competence-badge">AC13.04</span>
+                                            <span class="competence-badge">AC13.05</span>
+                                            <span class="competence-badge">AC13.06</span>
+                                        </div>
+                                        <span class="competences-toggle">▼</span>
+                                    </div>
+                                    <div class="competences-content">
+                                        <div class="competences-list">
+                                            <div class="competence-item">
+                                                <span class="competence-badge">AC13.01</span>
+                                                <p><em>Utiliser un système informatique et ses outils</em> — VMs
+                                                    Windows/Linux, MySQL, Apache2, VS Code, Git/GitHub, Firefox.</p>
+                                            </div>
+                                            <div class="competence-item">
+                                                <span class="competence-badge">AC13.02</span>
+                                                <p><em>Lire, exécuter, corriger et modifier un programme</em> — création
+                                                    du code en Django, Python, HTML et CSS (vues, routes, urls, models,
+                                                    formulaires).</p>
+                                            </div>
+                                            <div class="competence-item">
+                                                <span class="competence-badge">AC13.03</span>
+                                                <p><em>Traduire un algorithme</em> — en analysant les besoins du sujet
+                                                    pour créer l'application respectant le cahier des charges.</p>
+                                            </div>
+                                            <div class="competence-item">
+                                                <span class="competence-badge">AC13.04</span>
+                                                <p><em>Connaître l'architecture d'un site Web</em> — mise en place des
+                                                    pages web sur le serveur Linux Apache2.</p>
+                                            </div>
+                                            <div class="competence-item">
+                                                <span class="competence-badge">AC13.05</span>
+                                                <p><em>Choisir les mécanismes de gestion de données</em> — MySQL sur la
+                                                    VM Windows pour stocker les données de l'application.</p>
+                                            </div>
+                                            <div class="competence-item">
+                                                <span class="competence-badge">AC13.06</span>
+                                                <p><em>S'intégrer dans un environnement collaboratif</em> — diagramme de
+                                                    Gantt, GitHub et rédaction d'une fiche procédure.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="project-resources">
+                                    <a href="fichiers/Rapport_SAE23_Fritschy-Matheo.pdf" class="resource-link"
+                                        target="_blank">📄 Fiche procédure (PDF)</a>
+                                    <a href="https://github.com/FritschyMatheo/Site-Gestion-Absences"
+                                        class="resource-link" target="_blank">📂 Dépôt GitHub</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
 
-                <!-- COMPÉTENCE 3 : PROGRAMMER -->
-                <div id="ac13" class="competence-group">
-                    <div class="competence-header">
-                        <div class="competence-icon programmer">💻</div>
-                        <div class="competence-title">
-                            <h3>Programmer — Développement</h3>
-                            <p>AC13.01 à AC13.03</p>
-                        </div>
-                    </div>
-                    <div class="projects-grid">
-                        <!-- PROJETS À AJOUTER ICI -->
-                        <div class="project-card">
+                        <!-- SAÉ 2.04 -->
+                        <div id="sae204" class="project-card project-card-expanded">
                             <div class="project-card-content">
                                 <div class="project-card-header">
-                                    <h4 class="project-card-title">[En attente de contenu]</h4>
-                                    <span class="project-card-code">SAÉ 1.0x</span>
+                                    <h4 class="project-card-title">Projet intégratif</h4>
+                                    <span class="project-card-code">SAÉ 2.04</span>
                                 </div>
-                                <p class="project-card-description"><em>Contenu à fournir par l'utilisateur</em></p>
+
+                                <div class="project-section">
+                                    <h5>📋 Contexte</h5>
+                                    <p>Cette SAE avait pour but de nous faire acquérir <strong>toutes les compétences de
+                                            première année</strong> de BUT R&T. Configuration réseau physique,
+                                        téléphonie, création d'une application web avec base de données et réception de
+                                        données à distance.</p>
+                                    <p>Nous étions en groupe de trois avec : 4 postes, 1 téléphone IP, 1 routeur et 1
+                                        switch Cisco.</p>
+                                </div>
+
+                                <!-- Partie Réseau -->
+                                <div class="project-section">
+                                    <h5>🌐 Partie Réseau</h5>
+                                    <p>Configuration du réseau de base : branchement des postes, switch et routeur,
+                                        reset des configurations.</p>
+                                    <p>Création de <strong>4 VLANs</strong> : Voix, Utilisateur, Serveurs,
+                                        Administrateurs avec un masque /26.</p>
+                                    <p>Mise en place des <strong>ACLs</strong> et services : DNS, DHCP, FTP et Web. Je
+                                        me suis occupé du <strong>DNS</strong>, du <strong>FTP</strong> et de la partie
+                                        web.</p>
+                                    <div class="project-images-grid"
+                                        style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1rem;">
+                                        <div class="project-image">
+                                            <img src="images/sae204-reseau.png" alt="Schéma réseau SAE 2.04"
+                                                class="zoomable-image">
+                                        </div>
+                                        <div class="project-image">
+                                            <img src="images/sae204-dns.png" alt="Configuration DNS"
+                                                class="zoomable-image">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="project-section competences-collapsible">
+                                    <div class="competences-header"
+                                        onclick="this.parentElement.classList.toggle('open')">
+                                        <h5>Compétences Réseau</h5>
+                                        <div class="competences-badges">
+                                            <span class="competence-badge">AC11.01</span>
+                                            <span class="competence-badge">AC11.03</span>
+                                            <span class="competence-badge">AC11.04</span>
+                                            <span class="competence-badge">AC11.05</span>
+                                            <span class="competence-badge">AC11.06</span>
+                                            <span class="competence-badge">AC12.03</span>
+                                            <span class="competence-badge">AC13.06</span>
+                                        </div>
+                                        <span class="competences-toggle">▼</span>
+                                    </div>
+                                    <div class="competences-content">
+                                        <div class="competences-list">
+                                            <div class="competence-item">
+                                                <span class="competence-badge">AC11.01</span>
+                                                <p>Branchement du matériel et alimentation PoE.</p>
+                                            </div>
+                                            <div class="competence-item">
+                                                <span class="competence-badge">AC11.03</span>
+                                                <p>Configuration IP, DNS, DHCP et VLANs.</p>
+                                            </div>
+                                            <div class="competence-item">
+                                                <span class="competence-badge">AC11.04</span>
+                                                <p>Administration des réseaux et services.</p>
+                                            </div>
+                                            <div class="competence-item">
+                                                <span class="competence-badge">AC11.05</span>
+                                                <p>Règles ACL et résolution de problèmes de câblage/configuration.</p>
+                                            </div>
+                                            <div class="competence-item">
+                                                <span class="competence-badge">AC11.06</span>
+                                                <p>Installation des VM Linux Debian et Windows Serveur 2019.</p>
+                                            </div>
+                                            <div class="competence-item">
+                                                <span class="competence-badge">AC12.03</span>
+                                                <p>Déploiement des supports de transmission.</p>
+                                            </div>
+                                            <div class="competence-item">
+                                                <span class="competence-badge">AC13.06</span>
+                                                <p>Travail collaboratif pour le plan réseau et le câblage.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Partie Données -->
+                                <div class="project-section">
+                                    <h5>💾 Partie Données</h5>
+                                    <div class="project-content-split">
+                                        <div class="project-text">
+                                            <p>Récupération des données avec le protocole <strong>MQTT</strong> pour les
+                                                transférer à la base de données MySQL.</p>
+                                            <p>Données reçues : Id, pièce, date, heure, température — découpées et
+                                                stockées dans les bonnes tables.</p>
+                                            <p>Le script inclut un <strong>système de cache</strong> pour garder les
+                                                données en cas de déconnexion.</p>
+                                        </div>
+                                        <div class="project-image">
+                                            <img src="images/sae204-bdd.png" alt="Schéma BDD" class="zoomable-image">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="project-section competences-collapsible">
+                                    <div class="competences-header"
+                                        onclick="this.parentElement.classList.toggle('open')">
+                                        <h5>Compétences Données</h5>
+                                        <div class="competences-badges">
+                                            <span class="competence-badge">AC12.01</span>
+                                            <span class="competence-badge">AC12.02</span>
+                                            <span class="competence-badge">AC13.01</span>
+                                            <span class="competence-badge">AC13.02</span>
+                                            <span class="competence-badge">AC13.03</span>
+                                            <span class="competence-badge">AC13.05</span>
+                                        </div>
+                                        <span class="competences-toggle">▼</span>
+                                    </div>
+                                    <div class="competences-content">
+                                        <div class="competences-list">
+                                            <div class="competence-item">
+                                                <span class="competence-badge">AC12.01</span>
+                                                <p>Réception des données via protocole MQTT.</p>
+                                            </div>
+                                            <div class="competence-item">
+                                                <span class="competence-badge">AC12.02</span>
+                                                <p>Transmission des données et schéma relationnel.</p>
+                                            </div>
+                                            <div class="competence-item">
+                                                <span class="competence-badge">AC13.01</span>
+                                                <p>Mise en place de MySQL et des tables.</p>
+                                            </div>
+                                            <div class="competence-item">
+                                                <span class="competence-badge">AC13.02</span>
+                                                <p>Création du script Python de réception.</p>
+                                            </div>
+                                            <div class="competence-item">
+                                                <span class="competence-badge">AC13.03</span>
+                                                <p>Traduction de l'algorithme pour le script MQTT.</p>
+                                            </div>
+                                            <div class="competence-item">
+                                                <span class="competence-badge">AC13.05</span>
+                                                <p>Choix de MySQL pour le stockage des capteurs.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Partie Web -->
+                                <div class="project-section">
+                                    <h5>🌍 Partie Web</h5>
+                                    <div class="project-content-split">
+                                        <div class="project-text">
+                                            <p>Application Web sur serveur <strong>Apache2 sous Linux</strong> avec
+                                                <strong>Django/Python</strong>.
+                                            </p>
+                                            <p>Fonctionnalités : visualisation des données en tableau, filtrage,
+                                                graphique des températures, export CSV.</p>
+                                        </div>
+                                        <div class="project-image">
+                                            <img src="images/sae204-web.png" alt="Application Web SAE 2.04"
+                                                class="zoomable-image">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="project-section competences-collapsible">
+                                    <div class="competences-header"
+                                        onclick="this.parentElement.classList.toggle('open')">
+                                        <h5>Compétences Web</h5>
+                                        <div class="competences-badges">
+                                            <span class="competence-badge">AC11.02</span>
+                                            <span class="competence-badge">AC13.01</span>
+                                            <span class="competence-badge">AC13.02</span>
+                                            <span class="competence-badge">AC13.04</span>
+                                        </div>
+                                        <span class="competences-toggle">▼</span>
+                                    </div>
+                                    <div class="competences-content">
+                                        <div class="competences-list">
+                                            <div class="competence-item">
+                                                <span class="competence-badge">AC11.02</span>
+                                                <p>Utilisation de Django pour visualiser les données.</p>
+                                            </div>
+                                            <div class="competence-item">
+                                                <span class="competence-badge">AC13.01</span>
+                                                <p>Environnement virtuel et projet Django sur GitHub.</p>
+                                            </div>
+                                            <div class="competence-item">
+                                                <span class="competence-badge">AC13.02</span>
+                                                <p>Création et adaptation de l'application.</p>
+                                            </div>
+                                            <div class="competence-item">
+                                                <span class="competence-badge">AC13.04</span>
+                                                <p>Déploiement sur serveur Apache2.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Partie Téléphonie -->
+                                <div class="project-section">
+                                    <h5>📞 Partie Téléphonie</h5>
+                                    <p>Installation de <strong>Linphone</strong> sur deux postes (VLAN utilisateurs) et
+                                        configuration d'un <strong>téléphone matériel</strong> (VLAN voix). Tests
+                                        d'appels et visiophonie à trois appareils.</p>
+                                </div>
+
+                                <div class="project-section competences-collapsible">
+                                    <div class="competences-header"
+                                        onclick="this.parentElement.classList.toggle('open')">
+                                        <h5>Compétences Téléphonie</h5>
+                                        <div class="competences-badges">
+                                            <span class="competence-badge">AC11.01</span>
+                                            <span class="competence-badge">AC11.03</span>
+                                            <span class="competence-badge">AC12.03</span>
+                                            <span class="competence-badge">AC12.04</span>
+                                            <span class="competence-badge">AC12.05</span>
+                                        </div>
+                                        <span class="competences-toggle">▼</span>
+                                    </div>
+                                    <div class="competences-content">
+                                        <div class="competences-list">
+                                            <div class="competence-item">
+                                                <span class="competence-badge">AC11.01</span>
+                                                <p>Alimentation PoE du téléphone matériel.</p>
+                                            </div>
+                                            <div class="competence-item">
+                                                <span class="competence-badge">AC11.03</span>
+                                                <p>Configuration des IPs des téléphones.</p>
+                                            </div>
+                                            <div class="competence-item">
+                                                <span class="competence-badge">AC12.03</span>
+                                                <p>Raccordement des postes au réseau.</p>
+                                            </div>
+                                            <div class="competence-item">
+                                                <span class="competence-badge">AC12.04</span>
+                                                <p>Connexion des systèmes de ToIP.</p>
+                                            </div>
+                                            <div class="competence-item">
+                                                <span class="competence-badge">AC12.05</span>
+                                                <p>Tests d'appels et visiophonie à trois.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
                             </div>
                         </div>
                     </div>
